@@ -105,7 +105,7 @@ As I mentioned before if you open rviz, after you run the previous launch file, 
 
 <img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/18.png" width="75%" height="75%">
 
-If the disparity map and of course the point cloud are not showing good results, just adjust the stereo processing parameters, you can check them with their meaning and operation ranges in **[choosing good stereo parameters]**(http://wiki.ros.org/stereo_image_proc/Tutorials/ChoosingGoodStereoParameters
+If the disparity map and of course the point cloud are not showing good results, just adjust the stereo processing parameters, you can check them with their meaning and operation ranges in [choosing good stereo parameters](http://wiki.ros.org/stereo_image_proc/Tutorials/ChoosingGoodStereoParameters
 ) ,  for example. If you want to set these parameters, open another terminal and launch the dynparam_reconfigure node of Ros.
 
 
