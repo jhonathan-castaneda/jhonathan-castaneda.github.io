@@ -16,7 +16,7 @@ In order to follow the proposed steps in this tutorial you will need to have ins
 
 Also, you need to download and print this template.
 
-<a href="{{ site.baseurl }}/images/calibration_template.pdf" download = "calibration_template">
+[Calibration template](https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/calibration_template.pdf)
 
 And download the next files.
 
