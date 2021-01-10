@@ -25,7 +25,7 @@ Also, you need to download and print this template.
 * <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration_template.pdf">Calibration template</a>
 
 <p style="text-align: left">
-And download the next .launch files.
+And download the next files.
 </p>
 
 * <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration.launch">calibration.launch</a>
