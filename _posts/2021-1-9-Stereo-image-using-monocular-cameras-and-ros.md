@@ -3,7 +3,17 @@ layout: post
 title: Stereo image using monocular cameras and ros
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+In this practical tutorial I explain how to set up a pair of monocular cameras to use them like a stereo camera capable to build 3D point clouds. The required material for this tutorial is 2 usb cameras, an installation of ros in your computer and a chessboard template for the calibration of the cameras. 
+
+In order to follow the proposed steps in this tutorial you will need to have installed the next ros packages, in my case I am using ros melodic in Ubuntu 18.04.
+
+* usb_cam
+* camera_calibration
+* image_view
+* stereo_image_proc
+* dynamic_reconfigure
+* rviz
+
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
