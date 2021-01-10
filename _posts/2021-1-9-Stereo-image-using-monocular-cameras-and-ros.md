@@ -43,7 +43,7 @@ Move the last two .launch files listed above to the launch directory of the usb_
 </div>
 
 <p style="text-align: justify">
-I'm using a pair of logitech c920 cameras for this tutorial, but you can use any other usb webcam as well or another type of camera if you can connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
+I'm using a pair of logitech c920 cameras for this tutorial, but you can use any other usb webcam as well or another type of camera if you can connect them to your computer via usb. First of all, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
 </p>
 
 <p style="text-align: justify">
