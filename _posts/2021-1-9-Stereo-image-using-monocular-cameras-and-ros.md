@@ -30,7 +30,7 @@ you can use any other usb webcam as well or another type of camera if you are al
 
 For this, before plugging in the usb cameras, open a terminal in your system and type the next command.
 
-![im2]("https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/2.png)
+![2]("https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/2.png)
 
 Run it and you will see something like this.
 
