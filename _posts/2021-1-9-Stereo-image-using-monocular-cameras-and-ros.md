@@ -20,6 +20,8 @@ Also, you need to download and print this template.
 
 And download the next files.
 
+!!post in revision, I'm uploading the launch files on 2021/01/09!! 
+
 For this tutorial I'm using a pair of logitech c920 cameras.
 
 <img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/1.png" width="30%" height="30%">
