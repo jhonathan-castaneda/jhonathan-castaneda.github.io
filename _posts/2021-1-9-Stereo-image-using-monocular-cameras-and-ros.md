@@ -35,7 +35,7 @@ And download the next files.
 * <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/run_stereo.launch">run_stereo.launch</a>
 
 <p style="text-align: left">
-First of all, move the last two .launch files listed above to the launch directory of the usb_cam package, after this, we can get started with the tutorial.
+Move the last two .launch files listed above to the launch directory of the usb_cam package, after this, we can get started with the tutorial.
 </p>
 
 <div style="text-align: center">
