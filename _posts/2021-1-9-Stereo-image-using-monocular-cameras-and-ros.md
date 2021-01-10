@@ -38,13 +38,17 @@ For this, before plugging in the usb cameras, open a terminal in your system and
 
 Run it and you will see something like this.
 
-<img src="{{site.baseurl}}/images/3.jpg" width="45%" height="45%">
+<div style="text-align: center">
+  <img src="{{site.baseurl}}/images/3.jpg" width="45%" height="45%">
+</div>
 
 This pair of devices correspond to a single physical device, in this case my integrated computer camera, from the first one you can get the video data, the second one just gives information about the device.
 
 Now, plug in the left usb camera on your computer, you will see how the device appear in the console.
 
-<img src="{{site.baseurl}}/images/4.jpg" width="45%" height="45%">
+<div style="text-align: center">
+  <img src="{{site.baseurl}}/images/4.jpg" width="45%" height="45%">
+</div>
 
 Once again we get a pair of devices, but video2 is our left image channel. Connect the right camera and you will see the last pair of devices.
 
