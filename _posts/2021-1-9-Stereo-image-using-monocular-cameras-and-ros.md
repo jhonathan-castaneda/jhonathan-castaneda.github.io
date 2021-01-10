@@ -22,13 +22,17 @@ In order to follow the proposed steps in this tutorial you will need to have ins
 Also, you need to download and print this template.
 </p>
 
-<a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration_template.pdf">Calibration template</a>
+* <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration_template.pdf">Calibration template</a>
 
 <p style="text-align: left">
 And download the next .launch files.
 </p>
 
-!!post in revision, I'm uploading the launch files on 2021/01/09!! 
+* <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration.launch">calibration.launch</a>
+
+* <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/run_stereo.launch">run_stereo.launch</a>
+
+* <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/camera_info_template.yaml">camera_info_template.yaml</a>
 
 <p style="text-align: left">
 For this tutorial I'm using a pair of logitech c920 cameras.
@@ -83,7 +87,7 @@ Now we have the device name of the left camera and the right camera, video2 and 
 </p>
 
 <p style="text-align: justify">
-go to the directory when you have the “calibration.launch” file, and edit the source for the left and the right image using the names that you got with the previous steps.
+go to the directory when you have the <a href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration.launch">calibration.launch</a> file, and edit the source for the left and the right image using the names that you got with the previous steps.
 </p>
 
 <div style="text-align: center">
@@ -157,7 +161,7 @@ Up to here, there is just one last step before you can run the stereo image proc
 </p>
 
 <p style="text-align: justify">
-Open the run_stereo.launch file and edit the camera_info_url parameter, write down there the path for the data of each camera, this path is where you have saved previously the pair of .yaml files with the information of the calibration.
+Open the <a href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/run_stereo.launch">run_stereo.launch</a> file and edit the camera_info_url parameter, write down there the path for the data of each camera, this path is where you have saved previously the pair of .yaml files with the information of the calibration.
 </p>
 
 <div style="text-align: center">
