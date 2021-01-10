@@ -16,12 +16,16 @@ In order to follow the proposed steps in this tutorial you will need to have ins
 
 Also, you need to download and print this template.
 
-<a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/calibration_template.pdf">Calibration template</a>
+<a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration_template.pdf">Calibration template</a>
 
 And download the next files.
 
+For this tutorial I'm using a pair of logitech c920 cameras.
+
+[1](https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/1.png)
+
+you can use any other usb webcam as well or another type of camera if you are allowed to connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
 
 
-![1]({{ site.baseurl }}/images/1.png)
 
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
