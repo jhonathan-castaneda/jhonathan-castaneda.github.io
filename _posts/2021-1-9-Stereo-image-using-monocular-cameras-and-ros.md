@@ -91,50 +91,71 @@ The calibration window will appear and you will be able to start the process.
   <img src="{{site.baseurl}}/images/11.jpg" width="75%" height="75%">
 </div>
 
+<p style="text-align: justify">
 As soon as you start moving the calibration template in the camera's field of view the samples for calibration will be taken, move the chessboard around, then when the marks of X. Y. Skew and Size are green, you can stop the sampling and calibrate the cameras.
 When you select the option “calibrate” the system will start to estimate a group of vectors with information about your cameras, specifically the distortion of each image, the camera matrix based on the pinhole model, the rectification matrix for each camera and the projection matrix of these too, this process takes some of time depending on the capabilities of each computer.
+</p>
 
+<p style="text-align: justify">
 Wait for a while and then when the process is completed you will see some information in your console.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/12.jpg" width="75%" height="75%">
 </div>
 
+<p style="text-align: justify">
 Here, you can find the camera matrix (K) and distortion matrix (D), also the rectification, matrix (R) and the projection matrix (P). The previous image for example shows just the information of one of my cameras, but you will get the information from both of them of course.
+</p>
 
+<p style="text-align: justify">
 Copy this information from the console in a text file and save it, now, in a .yml file with the next structure write down the values of K, D, R, and P for the right camera, specify the resolution used in the calibration process (in my case it was 1280x720p.) and then just save the file with the name right.yaml, repeat this for the left camera information and save the respective file as left.yaml. At the end you will get 2 .yaml files with the information from your pair of cameras. These .yaml files will be used later by the block matching algorithm to get the disparity map from the stereo image.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/13.jpg" width="45%" height="45%">
 </div>
 
+<p style="text-align: justify">
 Up to here, there is just one last step before you can run the stereo to get point clouds of your environment, the run_stereo.launch file configuration.
+</p>
 
+<p style="text-align: justify">
 Open the run_stereo.launch file and edit the camera_info_url parameter, write down there the path for the data of each camera, this path is where you have saved previously the pair of .yaml files with the information of the calibration.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/14.jpg" width="75%" height="75%">
   <img src="{{site.baseurl}}/images/15.jpg" width="75%" height="75%">
 </div>
 
+<p style="text-align: justify">
 save it and then launch it, after this, the disparity map will appear.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/16.jpg" width="75%" height="75%">
 </div>
 
-
+<p style="text-align: justify">
 The last picture of the disparity map is from a test into a room, you can test the stereo outside and check the generated point cloud in rviz too, but I recommend you to protect the cameras with uv-ir filters over the camera’s lenses (if you don’t have one of these you can use a little piece of polarized car film over the lenses to protect them temporally) this is because some usb cameras are specifically designed for indoor usage, where the exposure to ir and uv light is very low compared with the exposition outside under common daylight illumination.
+</p>
 
+<p style="text-align: justify">
 If you use your usb cameras outside without any protection the image can be damaged, there is an example of this below.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/17.jpg" width="75%" height="75%">
 </div>
 
+<p style="text-align: justify">
 On the right side we can see how the image is damaged when we don’t use any protection for the usb cameras. In the left side there is an approximation of how the image should be, this approximation was obtained by applying an adjustment to the damaged image with basic image processing techniques. This looks bad, but the worst part about this is the heating of the CCD or CMOS sensor by the exposure to the daylight illuminations without any protection, If you don't protect the lenses the overheating in the sensor will burn it. 
+</p>
 
+<p style="text-align: justify">
 As I mentioned before if you open rviz, after you run the previous launch file, you will be able to check the generated point cloud, here we have an example of the final result where the stereo was capable to generate a point cloud of objects that are located in a large range (up to 50 meters approximately)
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/18.jpg" width="75%" height="75%">
@@ -145,11 +166,9 @@ If the disparity map and of course the point cloud are not showing good results,
 . If you want to set these parameters, open another terminal and launch the dynparam_reconfigure node of ros.
 </p>
 
-
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/19.jpg" width="45%" height="45%">
 </div>
-
 
 <p style="text-align: justify">
 In the previous image for example, i am setting the values for the stereo parameters, I am using these values for processing the stereo image with my cameras but you can test with other values and check how the disparity map and the pointcloud change.
