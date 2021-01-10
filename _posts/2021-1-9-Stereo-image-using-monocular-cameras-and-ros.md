@@ -77,6 +77,7 @@ In my case the squares have 0.0244 m in each side approximately and the intersec
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/9.jpg" width="45%" height="45%">
+  
   <img src="{{site.baseurl}}/images/10.jpg" width="45%" height="45%">
 </div>
 
