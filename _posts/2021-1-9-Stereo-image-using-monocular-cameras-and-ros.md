@@ -22,19 +22,18 @@ And download the next files.
 
 For this tutorial I'm using a pair of logitech c920 cameras.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/1.png" width="50%" height="50%">
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/1.png">
-
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/1.png" width="30%" height="30%">
 
 you can use any other usb webcam as well or another type of camera if you are allowed to connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
 
 For this, before plugging in the usb cameras, open a terminal in your system and type the next command.
 
-![2](https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/2.png)
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/2.png" width="30%" height="30%">
+
 
 Run it and you will see something like this.
 
-![3](https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/3.png)
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/3.png" width="30%" height="30%">
 
 This pair of devices correspond to a single physical device, in this case my integrated computer camera, from the first one you can get the video data, the second one just gives information about the device.
 
