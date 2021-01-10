@@ -80,7 +80,7 @@ Here, you can find the camera matrix (K) and distortion matrix (D), also the rec
 
 Copy this information from the console in a text file and save it, now, in a .yml file with the next structure write down the values of K, D, R, and P for the right camera, specify the resolution used in the calibration process (in my case it was 1280x720p.) and then just save the file with the name right.yaml, repeat this for the left camera information and save the respective file as left.yaml. At the end you will get 2 .yaml files with the information from your pair of cameras. These .yaml files will be used later by the block matching algorithm to get the disparity map from the stereo image.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/13.png" width="75%" height="75%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/13.png" width="45%" height="45%">
 
 
 
