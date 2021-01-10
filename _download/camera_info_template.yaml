@@ -1,0 +1,31 @@
+#this .yaml file has the information from each camera. you need one per camera.
+#one called left.yaml with the info from the left camera obtained after the calibration and
+#other called right.yaml with the info from the right camera obtained after the calibration
+
+## Set the width according to the image resolution that you have used in the calibration
+## Set the height according to the image resolution that you have used in the calibration
+
+image_width: <width>   
+image_height: <height>   
+camera_name: head_camera
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [484.6827239944458, 0, 365.0552281756921, 0, 434.00682342089436, 269.60671221105906, 0, 0, 1]
+
+
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.4151976699201958, 0.1432295941518507, -0.0018907508941274687, -0.001227643416828533, 0]
+
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [0.999815724616933, -0.004538788499460158, 0.018652512100906262, 0.004718242005845141, 0.999942901090805, -0.009588156782145793, -0.018607928447077746, 0.009674396986990855, 0.999780051332215]
+
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [429.5778321062761, 0, 358.09721755981445, 40.46746542437972, 0, 429.5778321062761, 250.1473789215088, 0, 0, 0, 1, 0]
