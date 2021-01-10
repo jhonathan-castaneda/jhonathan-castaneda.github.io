@@ -69,5 +69,23 @@ The calibration window will appear and you will be able to start the process.
 
 <img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/11.png" width="75%" height="75%">
 
+As soon as you start moving the calibration template in the camera's field of view the samples for calibration will be taken, move the chessboard around, then when the marks of X. Y. Skew and Size are green, you can stop the sampling and calibrate the cameras.
+When you select the option “calibrate” the system will start to estimate a group of vectors with information about your cameras, specifically the distortion of each image, the camera matrix based on the pinhole model, the rectification matrix for each camera and the projection matrix of these too, this process takes some of time depending on the capabilities of each computer.
+
+Wait for a while and then when the process is completed you will see some information in your console.
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/12.png" width="75%" height="75%">
+
+Here, you can find the camera matrix (K) and distortion matrix (D), also the rectification, matrix (R) and the projection matrix (P). The previous image for example shows just the information of one of my cameras, but you will get the information from both of them of course.
+
+Copy this information from the console in a text file and save it, now, in a .yml file with the next structure write down the values of K, D, R, and P for the right camera, specify the resolution used in the calibration process (in my case it was 1280x720p.) and then just save the file with the name right.yaml, repeat this for the left camera information and save the respective file as left.yaml. At the end you will get 2 .yaml files with the information from your pair of cameras. These .yaml files will be used later by the block matching algorithm to get the disparity map from the stereo image.
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/13.png" width="75%" height="75%">
+
+
+
+
+
+
 
 
