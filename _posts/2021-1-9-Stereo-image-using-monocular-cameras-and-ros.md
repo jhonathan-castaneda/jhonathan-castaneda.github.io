@@ -3,9 +3,13 @@ layout: post
 title: Stereo image using monocular cameras and ros
 ---
 
+<p style="text-align: justify">
 In this practical tutorial i explain how to configure a pair of monocular cameras to use them like a stereo camera and obtain 3D point clouds. The required material for this tutorial is 2 usb cameras, an installation of ros in your computer and a chessboard template for the calibration of the cameras. 
+</p>
 
+<p style="text-align: justify">
 In order to follow the proposed steps in this tutorial you will need to have installed the next ros packages, in my case i am using ros melodic in Ubuntu 18.04.
+</p>
 
 * usb_cam
 * camera_calibration
@@ -14,66 +18,94 @@ In order to follow the proposed steps in this tutorial you will need to have ins
 * dynamic_reconfigure
 * rviz
 
+<p style="text-align: left">
 Also, you need to download and print this template.
+</p>
 
 <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration_template.pdf">Calibration template</a>
 
+<p style="text-align: left">
 And download the next files.
+</p>
 
 !!post in revision, I'm uploading the launch files on 2021/01/09!! 
 
+<p style="text-align: left">
 For this tutorial I'm using a pair of logitech c920 cameras.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/1.jpg" width="40%" height="40%">
 </div>
 
+<p style="text-align: justify">
 you can use any other usb webcam as well or another type of camera if you are allowed to connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
+</p>
 
+<p style="text-align: justify">
 For this, before plugging in the usb cameras, open a terminal in your system and type the next command.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/2.jpg" width="45%" height="45%">
 </div>
 
+<p style="text-align: justify">
 Run it and you will see something like this.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/3.jpg" width="45%" height="45%">
 </div>
 
+<p style="text-align: justify">
 This pair of devices correspond to a single physical device, in this case my integrated computer camera, from the first one you can get the video data, the second one just gives information about the device.
+</p>
 
+<p style="text-align: justify">
 Now, plug in the left usb camera on your computer, you will see how the device appear in the console.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/4.jpg" width="45%" height="45%">
 </div>
 
+<p style="text-align: justify">
 Once again we get a pair of devices, but video2 is our left image channel. Connect the right camera and you will see the last pair of devices.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/5.jpg" width="45%" height="45%">
 </div>
 
+<p style="text-align: justify">
 Now we have the device name of the left camera and the right camera, video2 and video4 respectively (these will probably be different for you), with this info set up the launch file for the calibration.
+</p>
 
+<p style="text-align: justify">
 go to the directory when you have the “calibration.launch” file, and edit the source for the left and the right image using the names that you got with the previous steps.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/6.jpg" width="75%" height="75%">
   <img src="{{site.baseurl}}/images/7.jpg" width="75%" height="75%">
 </div>
 
+<p style="text-align: justify">
 This previous launch file sets main parameters for the usb cameras as for example image resolution, frames per second for video, pixel format and focal length, also establishes the topics where the video data will be published for each image source. You can edit the value for each parameter depending on your preferences.
+</p>
 
+<p style="text-align: justify">
 With this configuration you can run the stereo calibration using the camera_calibration package from Ros. In order to make this, take your chessboard template for calibration and measure the size of the squares and check the number of intersections between black and withe squares in horizontal and vertical direction.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/8.jpg" width="35%" height="35%">
 </div>
 
+<p style="text-align: justify">
 In my case the squares have 0.0244 m in each side approximately and the intersections are 9 and 6 respectively. With this information, run the calibration.launch file and then in another terminal run the calibration node.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/9.jpg" width="45%" height="45%">
@@ -83,9 +115,13 @@ In my case the squares have 0.0244 m in each side approximately and the intersec
   <img src="{{site.baseurl}}/images/10.jpg" width="45%" height="45%">
 </div>
 
+<p style="text-align: justify">
 Note that in the calibration node you need to specify the size of the squares in your chessboard template and the previous mentioned chessboard intersections (9x6 in my case). Also you need to specify the topic where each source of image is.
+</p>
 
+<p style="text-align: justify">
 The calibration window will appear and you will be able to start the process.
+</p>
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/11.jpg" width="75%" height="75%">
