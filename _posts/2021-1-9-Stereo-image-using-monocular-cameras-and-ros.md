@@ -38,20 +38,20 @@ This pair of devices correspond to a single physical device, in this case my int
 
 Now, plug in the left usb camera on your computer, you will see how the device appear in the console.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/4.png" width="75%" height="75%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/4.png" width="45%" height="45%">
 
 Once again we get a pair of devices, but video2 is our left image channel. Connect the right camera and you will see the last pair of devices.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/5.png" width="75%" height="75%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/5.png" width="45%" height="45%">
 
 Now we have the device name of the left camera and the right camera, video2 and video4 respectively (these will probably be different for you), with this info set up the launch file for the calibration.
 
 go to the directory when you have the “calibration.launch” file, and edit the source for the left and the right image using the names that you got with the previous steps.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/6.png" width="45%" height="45%">
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/7.png" width="45%" height="45%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/6.png" width="75%" height="75%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/7.png" width="75%" height="75%">
 
 This previous launch file sets main parameters for the usb cameras as for example image resolution, frames per second for video, pixel format and focal length, also establishes the topics where the video data will be published for each image source. You can edit the value for each parameter depending on your preferences.
 
-
+With this configuration you can run the stereo calibration using the camera_calibration package from Ros. In order to make this, take your chessboard template for calibration and measure the size of the squares and check the number of intersections between black and withe squares in horizontal and vertical direction.
 
