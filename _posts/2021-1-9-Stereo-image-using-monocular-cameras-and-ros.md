@@ -117,7 +117,7 @@ Open the run_stereo.launch file and edit the camera_info_url parameter, write do
 save it and then launch it, after this, the disparity map will appear.
 
 <div style="text-align: center">
-  <img src="{{site.baseurl}}/images/16.png" width="75%" height="75%">
+  <img src="{{site.baseurl}}/images/16.jpg" width="75%" height="75%">
 </div>
 
 
