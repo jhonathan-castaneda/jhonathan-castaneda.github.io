@@ -4,11 +4,11 @@ title: Stereo image using monocular cameras and ros
 ---
 
 <p style="text-align: justify">
-In this practical tutorial i explain how to configure a pair of monocular cameras to use them like a stereo camera and obtain 3D point clouds. The required material for this tutorial is 2 usb cameras, an installation of ros in your computer and a chessboard template for the calibration of the cameras. 
+In this practical tutorial I explain how to configure a pair of monocular cameras to use them like a stereo camera and obtain 3D point clouds. The required material for this tutorial is 2 usb cameras, an installation of ros in your computer and a chessboard template for the calibration of the cameras. 
 </p>
 
 <p style="text-align: justify">
-In order to follow the proposed steps in this tutorial you will need to have installed the next ros packages, in my case i am using ros melodic in Ubuntu 18.04.
+In order to follow the proposed steps in this tutorial you will need to have installed the next ros packages, in my case I'm using ros melodic in Ubuntu 18.04.
 </p>
 
 * usb_cam
@@ -25,7 +25,7 @@ Also, you need to download and print this template.
 <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration_template.pdf">Calibration template</a>
 
 <p style="text-align: left">
-And download the next files.
+And download the next .launch files.
 </p>
 
 !!post in revision, I'm uploading the launch files on 2021/01/09!! 
@@ -39,7 +39,7 @@ For this tutorial I'm using a pair of logitech c920 cameras.
 </div>
 
 <p style="text-align: justify">
-you can use any other usb webcam as well or another type of camera if you are allowed to connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
+you can use any other usb webcam as well or another type of camera if you can connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
 </p>
 
 <p style="text-align: justify">
@@ -59,7 +59,7 @@ Run it and you will see something like this.
 </div>
 
 <p style="text-align: justify">
-This pair of devices correspond to a single physical device, in this case my integrated computer camera, from the first one you can get the video data, the second one just gives information about the device.
+This pair of devices corresponds to a single physical device, in this case my integrated computer's camera, from the first one you can get the video data, the second one just gives information about the device.
 </p>
 
 <p style="text-align: justify">
@@ -92,11 +92,11 @@ go to the directory when you have the “calibration.launch” file, and edit th
 </div>
 
 <p style="text-align: justify">
-This previous launch file sets main parameters for the usb cameras as for example image resolution, frames per second for video, pixel format and focal length, also establishes the topics where the video data will be published for each image source. You can edit the value for each parameter depending on your preferences.
+This previous launch file sets some of the main parameters for the usb cameras, for example the image resolution, frames per second for video, pixel format and focal length, also establishes the topics where the video data will be published for each image source. You can edit the value for each parameter depending on your preferences.
 </p>
 
 <p style="text-align: justify">
-With this configuration you can run the stereo calibration using the camera_calibration package from Ros. In order to make this, take your chessboard template for calibration and measure the size of the squares and check the number of intersections between black and withe squares in horizontal and vertical direction.
+With this configuration you can run the stereo calibration using the camera_calibration package from ros. In order to make this, take your chessboard template for calibration and measure the size of the squares and check the number of intersections between black and withe squares in horizontal and vertical direction.
 </p>
 
 <div style="text-align: center">
@@ -120,7 +120,7 @@ Note that in the calibration node you need to specify the size of the squares in
 </p>
 
 <p style="text-align: justify">
-The calibration window will appear and you will be able to start the process.
+A new window will appear and you will be able to start the calibration process.
 </p>
 
 <div style="text-align: center">
@@ -145,7 +145,7 @@ Here, you can find the camera matrix (K) and distortion matrix (D), also the rec
 </p>
 
 <p style="text-align: justify">
-Copy this information from the console in a text file and save it, now, in a .yml file with the next structure write down the values of K, D, R, and P for the right camera, specify the resolution used in the calibration process (in my case it was 1280x720p.) and then just save the file with the name right.yaml, repeat this for the left camera information and save the respective file as left.yaml. At the end you will get 2 .yaml files with the information from your pair of cameras. These .yaml files will be used later by the block matching algorithm to get the disparity map from the stereo image.
+Copy this information from the console in a text file and save it, now, in the <a href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/camera_info_template.yaml">camera info template</a> write down the values of K, D, R, and P for the right camera, specify the resolution used in the calibration process (in my case it was 1280x720p.) and then just save the file with the name right.yaml, repeat this for the left camera information and save the respective file as left.yaml. At the end you will get 2 .yaml files with the information from your pair of cameras. These .yaml files will be used later by the block matching algorithm to get the disparity map from the stereo image.
 </p>
 
 <div style="text-align: center">
@@ -153,7 +153,7 @@ Copy this information from the console in a text file and save it, now, in a .ym
 </div>
 
 <p style="text-align: justify">
-Up to here, there is just one last step before you can run the stereo to get point clouds of your environment, the run_stereo.launch file configuration.
+Up to here, there is just one last step before you can run the stereo image processing to get point clouds of your environment, the run_stereo.launch file configuration.
 </p>
 
 <p style="text-align: justify">
