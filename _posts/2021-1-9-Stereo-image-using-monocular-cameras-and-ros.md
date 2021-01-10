@@ -24,13 +24,15 @@ And download the next files.
 
 For this tutorial I'm using a pair of logitech c920 cameras.
 
-<img src="{{site.baseurl}}/images/1.jpg" width="40%" height="40%">
+<div style="text-align: center">
+  <img src="{{site.baseurl}}/images/1.jpg" width="40%" height="40%">
+</div>
 
 you can use any other usb webcam as well or another type of camera if you are allowed to connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
 
 For this, before plugging in the usb cameras, open a terminal in your system and type the next command.
 
-<div style="text-align: right"><img src="{{site.baseurl}}/images/2.jpg" width="45%" height="45%">
+<img src="{{site.baseurl}}/images/2.jpg" width="45%" height="45%">
 
 Run it and you will see something like this.
 
