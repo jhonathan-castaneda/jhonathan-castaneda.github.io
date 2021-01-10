@@ -89,6 +89,32 @@ Open the run_stereo.launch file and edit the camera_info_url parameter, write do
 <img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/14.png" width="75%" height="75%">
 <img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/15.png" width="75%" height="75%">
 
+save it and then launch it, after this, the disparity map will appear.
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/16.png" width="75%" height="75%">
+
+The last picture of the disparity map is from a test into a room, you can test the stereo outside and check the generated point cloud in rviz too, but I recommend you to protect the cameras with uv-ir filters over the camera’s lenses (if you don’t have one of these you can use a little piece of polarized car film over the lenses to protect them temporally) this is because some usb cameras are specifically designed for indoor usage, where the exposure to ir and uv light is very low compared with the exposition outside under common daylight illumination.
+
+If you use your usb cameras outside without any protection the image can be damaged, there is an example of this below.
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/17.png" width="75%" height="75%">
+
+On the right side we can see how the image is damaged when we don’t use any protection for the usb cameras. In the left side there is an approximation of how the image should be, this approximation was obtained by applying an adjustment to the damaged image with basic image processing techniques. This looks bad, but the worst part about this is the heating of the CCD or CMOS sensor by the exposure to the daylight illuminations without any protection, If you don't protect the lenses the overheating in the sensor will burn it. 
+
+As I mentioned before if you open rviz, after you run the previous launch file, you will be able to check the generated point cloud, here we have an example of the final result where the stereo was capable to generate a point cloud of objects that are located in a large range (up to 50 meters approximately)
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/18.png" width="75%" height="75%">
+
+If the disparity map and of course the point cloud are not showing good results, just adjust the stereo processing parameters, you can check them with their meaning and operation ranges in **[choosing good stereo parameters]**(http://wiki.ros.org/stereo_image_proc/Tutorials/ChoosingGoodStereoParameters
+) ,  for example. If you want to set these parameters, open another terminal and launch the dynparam_reconfigure node of Ros.
+
+
+
+
+
+
+
+
 
 
 
