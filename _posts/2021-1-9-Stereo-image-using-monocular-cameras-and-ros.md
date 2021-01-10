@@ -28,14 +28,14 @@ Also, you need to download and print this template.
 And download the next files.
 </p>
 
+* <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/camera_info_template.yaml">camera_info_template.yaml</a>
+
 * <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration.launch">calibration.launch</a>
 
 * <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/run_stereo.launch">run_stereo.launch</a>
 
-* <a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/camera_info_template.yaml">camera_info_template.yaml</a>
-
 <p style="text-align: left">
-For this tutorial I'm using a pair of logitech c920 cameras.
+First of all, move the last two .launch files listed above to the launch directory of the usb_cam package, after this, we can get started with the tutorial.
 </p>
 
 <div style="text-align: center">
@@ -43,7 +43,7 @@ For this tutorial I'm using a pair of logitech c920 cameras.
 </div>
 
 <p style="text-align: justify">
-You can use any other usb webcam as well or another type of camera if you can connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
+I'm using a pair of logitech c920 cameras for this tutorial, but you can use any other usb webcam as well or another type of camera if you can connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
 </p>
 
 <p style="text-align: justify">
