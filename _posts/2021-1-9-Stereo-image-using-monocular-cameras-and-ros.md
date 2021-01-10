@@ -82,6 +82,12 @@ Copy this information from the console in a text file and save it, now, in a .ym
 
 <img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/13.png" width="45%" height="45%">
 
+Up to here, there is just one last step before you can run the stereo to get point clouds of your environment, the run_stereo.launch file configuration.
+
+Open the run_stereo.launch file and edit the camera_info_url parameter, write down there the path for the data of each camera, this path is where you have saved previously the pair of .yaml files with the information of the calibration.
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/14.png" width="75%" height="75%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/15.png" width="75%" height="75%">
 
 
 
