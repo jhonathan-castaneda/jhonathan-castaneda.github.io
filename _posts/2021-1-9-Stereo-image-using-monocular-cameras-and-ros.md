@@ -16,7 +16,7 @@ In order to follow the proposed steps in this tutorial you will need to have ins
 
 Also, you need to download and print this template.
 
-<a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/calibration_template.pdf">Download FILE</a>
+<a id="raw-url" href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/calibration_template.pdf">Calibration template</a>
 
 And download the next files.
 
