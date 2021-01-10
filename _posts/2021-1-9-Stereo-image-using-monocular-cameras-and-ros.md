@@ -43,7 +43,7 @@ For this tutorial I'm using a pair of logitech c920 cameras.
 </div>
 
 <p style="text-align: justify">
-you can use any other usb webcam as well or another type of camera if you can connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
+You can use any other usb webcam as well or another type of camera if you can connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
 </p>
 
 <p style="text-align: justify">
@@ -87,7 +87,7 @@ Now we have the device name of the left camera and the right camera, video2 and 
 </p>
 
 <p style="text-align: justify">
-go to the directory when you have the <a href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration.launch">calibration.launch</a> file, and edit the source for the left and the right image using the names that you got with the previous steps.
+Go to the directory when you have the <a href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/_download/calibration.launch">calibration.launch</a> file, and edit the source for the left and the right image using the names that you got with the previous steps.
 </p>
 
 <div style="text-align: center">
@@ -170,7 +170,7 @@ Open the <a href="https://github.com/jhonathan-castaneda/jhonathan-castaneda.git
 </div>
 
 <p style="text-align: justify">
-save it and then launch it, after this, the disparity map will appear.
+Save it and then launch it, after this, the disparity map will appear.
 </p>
 
 <div style="text-align: center">
