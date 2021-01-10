@@ -38,11 +38,11 @@ This pair of devices correspond to a single physical device, in this case my int
 
 Now, plug in the left usb camera on your computer, you will see how the device appear in the console.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/4.png" width="45%" height="45%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/4.png" width="75%" height="75%">
 
 Once again we get a pair of devices, but video2 is our left image channel. Connect the right camera and you will see the last pair of devices.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/5.png" width="45%" height="45%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/5.png" width="75%" height="75%">
 
 Now we have the device name of the left camera and the right camera, video2 and video4 respectively (these will probably be different for you), with this info set up the launch file for the calibration.
 
