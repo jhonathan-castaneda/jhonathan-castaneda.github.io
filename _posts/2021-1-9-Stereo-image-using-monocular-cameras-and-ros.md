@@ -24,7 +24,7 @@ And download the next files.
 
 For this tutorial I'm using a pair of logitech c920 cameras.
 
-![1]({{ site.baseurl }}/images/1.jpg)
+[1]({{ site.baseurl }}/images/1.jpg)
 
 you can use any other usb webcam as well or another type of camera if you are allowed to connect them to your computer via usb. By first, let's identify the right camera and the left one, this is because we need to distinguish each one in our system for making the calibration and then set up the stereo image parameters.
 
