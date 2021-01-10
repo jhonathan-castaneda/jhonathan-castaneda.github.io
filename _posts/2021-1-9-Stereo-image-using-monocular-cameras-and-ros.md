@@ -33,7 +33,7 @@ you can use any other usb webcam as well or another type of camera if you are al
 For this, before plugging in the usb cameras, open a terminal in your system and type the next command.
 
 <div style="text-align: center">
-<img src="{{site.baseurl}}/images/2.jpg" width="45%" height="45%">
+  <img src="{{site.baseurl}}/images/2.jpg" width="45%" height="45%">
 </div>
 
 Run it and you will see something like this.
@@ -52,20 +52,26 @@ Now, plug in the left usb camera on your computer, you will see how the device a
 
 Once again we get a pair of devices, but video2 is our left image channel. Connect the right camera and you will see the last pair of devices.
 
-<img src="{{site.baseurl}}/images/5.jpg" width="45%" height="45%">
+<div style="text-align: center">
+  <img src="{{site.baseurl}}/images/5.jpg" width="45%" height="45%">
+</div>
 
 Now we have the device name of the left camera and the right camera, video2 and video4 respectively (these will probably be different for you), with this info set up the launch file for the calibration.
 
 go to the directory when you have the “calibration.launch” file, and edit the source for the left and the right image using the names that you got with the previous steps.
 
-<img src="{{site.baseurl}}/images/6.jpg" width="75%" height="75%">
-<img src="{{site.baseurl}}/images/7.jpg" width="75%" height="75%">
+<div style="text-align: center">
+  <img src="{{site.baseurl}}/images/6.jpg" width="75%" height="75%">
+  <img src="{{site.baseurl}}/images/7.jpg" width="75%" height="75%">
+</div>
 
 This previous launch file sets main parameters for the usb cameras as for example image resolution, frames per second for video, pixel format and focal length, also establishes the topics where the video data will be published for each image source. You can edit the value for each parameter depending on your preferences.
 
 With this configuration you can run the stereo calibration using the camera_calibration package from Ros. In order to make this, take your chessboard template for calibration and measure the size of the squares and check the number of intersections between black and withe squares in horizontal and vertical direction.
 
-<img src="{{site.baseurl}}/images/8.jpg" width="35%" height="35%">
+<div style="text-align: center">
+  <img src="{{site.baseurl}}/images/8.jpg" width="35%" height="35%">
+</div>
 
 In my case the squares have 0.0244 m in each side approximately and the intersections are 9 and 6 respectively. With this information, run the calibration.launch file and then in another terminal run the calibration node.
 
