@@ -55,3 +55,19 @@ This previous launch file sets main parameters for the usb cameras as for exampl
 
 With this configuration you can run the stereo calibration using the camera_calibration package from Ros. In order to make this, take your chessboard template for calibration and measure the size of the squares and check the number of intersections between black and withe squares in horizontal and vertical direction.
 
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/8.png" width="75%" height="75%">
+
+In my case the squares have 0.0244 m in each side approximately and the intersections are 9 and 6 respectively. With this information, run the calibration.launch file and then in another terminal run the calibration node.
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/9.png" width="45%" height="45%">
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/10.png" width="45%" height="45%">
+
+Note that in the calibration node you need to specify the size of the squares in your chessboard template and the previous mentioned chessboard intersections (9x6 in my case). Also you need to specify the topic where each source of image is.
+
+The calibration window will appear and you will be able to start the process.
+
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/11.png" width="75%" height="75%">
+
+
+
