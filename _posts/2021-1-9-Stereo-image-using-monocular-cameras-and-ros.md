@@ -77,7 +77,9 @@ In my case the squares have 0.0244 m in each side approximately and the intersec
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/9.jpg" width="45%" height="45%">
-  
+</div>
+
+<div style="text-align: center">
   <img src="{{site.baseurl}}/images/10.jpg" width="45%" height="45%">
 </div>
 
@@ -141,13 +143,13 @@ As I mentioned before if you open rviz, after you run the previous launch file, 
 <div style="text-align: justify">
 If the disparity map and of course the point cloud are not showing good results, just adjust the stereo processing parameters, you can check them with their meaning and operation ranges in <a href="http://wiki.ros.org/stereo_image_proc/Tutorials/ChoosingGoodStereoParameters">Choosing Good Stereo Parameters</a>
 . If you want to set these parameters, open another terminal and launch the dynparam_reconfigure node of ros.
-
+"\"
 </div>
 
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/19.jpg" width="45%" height="45%">
-  
+"\"
 </div>
 
 
@@ -155,31 +157,31 @@ If the disparity map and of course the point cloud are not showing good results,
 In the previous image for example, i am setting the values for the stereo parameters, I am using these values for processing the stereo image with my cameras but you can test with other values and check how the disparity map and the pointcloud change.
 
 As I mentioned before, you can use any other type of usb cameras, for example I have also used a pair of IR cameras, these have aviator cable output instead of usb but you can adapt them to work as usb cameras using a rca to usb adapter.
-
+"\"
 </div>
 
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/20.jpg" width="45%" height="45%">
-  
+"\"  
 </div>
 
 
 <div style="text-align: justify">
 A nice thing about this type of cameras is the increased field of view compared to the one that we have with the pair of logitech cameras where we get around 78°. the field of view for these IR cameras is 120° approximately, the only problem with this cameras is the high distortion in the lenses, but don’t be worry about this, with a good calibration you can correct the effect of this on the images. With these cameras you will be able to get point clouds even at night using the IR illumination, also you don’t need to use filters like the ones we mentioned before for the usb cameras because these cameras are designed for outdoor usement. Here is an example of a point cloud obtained with the IR cameras.
-  
+"\"
 </div>
 
 
 <div style="text-align: center">
   <img src="{{site.baseurl}}/images/21.jpg" width="75%" height="75%">
-  
+"\"
 </div>
 
 
 <div style="text-align: justify">
 The resolution is smaller of course, and there are some occlusion areas, but with a better calibration you will get better results. An important thing about using these IR cameras is that if you are going to use them, you need to modify the video format in the launch files for calibration and stereo image processing, use mjpeg format instead of using yuyv and adjust the image resolution to a compatible one with the cameras.
-  
+"\"
 </div>
 
 
