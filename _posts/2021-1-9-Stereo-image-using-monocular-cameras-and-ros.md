@@ -28,12 +28,12 @@ you can use any other usb webcam as well or another type of camera if you are al
 
 For this, before plugging in the usb cameras, open a terminal in your system and type the next command.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/2.png" width="60%" height="60%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/2.png" width="45%" height="45%">
 
 
 Run it and you will see something like this.
 
-<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/3.png" width="60%" height="60%">
+<img src="https://github.com/jhonathan-castaneda/jhonathan-castaneda.github.io/blob/master/images/3.png" width="45%" height="45%">
 
 This pair of devices correspond to a single physical device, in this case my integrated computer camera, from the first one you can get the video data, the second one just gives information about the device.
 
