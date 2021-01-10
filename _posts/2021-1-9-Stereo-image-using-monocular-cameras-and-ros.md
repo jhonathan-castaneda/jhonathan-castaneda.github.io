@@ -142,7 +142,7 @@ If the disparity map and of course the point cloud are not showing good results,
 ) ,  for example. If you want to set these parameters, open another terminal and launch the dynparam_reconfigure node of ros.
 
 <div style="text-align: center">
-  <img src="{{site.baseurl}}/images/19.png" width="45%" height="45%">
+  <img src="{{site.baseurl}}/images/19.jpg" width="45%" height="45%">
 </div>
 
 In the previous image for example, i am setting the values for the stereo parameters, I am using these values for processing the stereo image with my cameras but you can test with other values and check how the disparity map and the pointcloud change.
@@ -160,7 +160,11 @@ A nice thing about this type of cameras is the increased field of view compared 
   <img src="{{site.baseurl}}/images/21.jpg" width="75%" height="75%">
 </div>
 
+<p style="text-align: justified">
 The resolution is smaller of course, and there are some occlusion areas, but with a better calibration you will get better results. An important thing about using these IR cameras is that if you are going to use them, you need to modify the video format in the launch files for calibration and stereo image processing, use mjpeg format instead of using yuyv and adjust the image resolution to a compatible one with the cameras.
+</p>
+
+
 
 
 
