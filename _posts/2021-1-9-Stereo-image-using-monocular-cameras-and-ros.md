@@ -5,9 +5,7 @@ title: Stereo image using monocular cameras and ros
 
 <p style="text-align: justify">
 In this practical tutorial I explain how to configure a pair of monocular cameras to use them like a stereo camera and obtain 3D point clouds. The required material for this tutorial is 2 usb cameras, an installation of ros in your computer and a chessboard template for the calibration of the cameras. This practical guide is based on the next material: <a href="http://wiki.ros.org/stereo_image_proc">stereo image proc</a>, <a href="http://ros-developer.com/2018/01/18/stereo-camera-calibration-with-ros-and-opencv/#comments">Stereo Camera Calibration with ROS and OpenCV</a> and <a href="https://docs.opencv.org/master/dc/dbb/tutorial_py_calibration.html">camera calibration</a>.
-  
-Stereo Camera Calibration with ROS and OpenCV  
- 
+
 
 </p>
 
