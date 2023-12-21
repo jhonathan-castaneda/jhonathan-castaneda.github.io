@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/projectsStyle.css') }}">
+        <title> SAMPLE PROJECTS </title>
+        <meta charset="utf-8">
+    </head> 
+
+    <body>
+<!-- ############################################################################################################################## --> 
+<!--                                                                                                                        NAV BAR --> 
+        <div class="header">
+            <nav>
+                <ul class="navLinks">
+                    <li><a href="/">General Information</a></li>
+                    <li><a href="/sampleProjects">Sample Projects</a></li>
+                </ul>
+                <div id="extraNav"> 
+                    <!--<button id="btnEn">  EN  </button>   --> 
+                    <!--<button type="btnEn">ES</button>   --> 
+                    <p class="emailHeader"> Contact: jhonathan.castaneda@uao.edu.co</p></li>
+                </div>
+
+            </nav>
+        </div>
+<!-- ############################################################################################################################## --> 
+<div class="overview">
+
+<!-- ##################################################### Point cloud data processing--> 
+    <section id="pClouds1">
+
+        <li class="p1">Point cloud data processing.</li>   
+        <div class="content">
+            <img src="http://127.0.0.1:5000/static/pClouds1/pc1.png" style= "width: 560px"> 
+            
+            <div class="description"> 
+                <p class="p2">Development of strategy to find and select key areas in a point cloud. 
+                    Key zones are located to start the reconstruction of the 3D profile without ocludded zones, based on mathematical models and feedback 
+                    from multiple sensors. </p> 
+                <p class="p3">Summary:</p>
+                <li class="p4">Collaboration in research project.</li>
+                <li class="p4">Algorithm developed and validated in Matlab.</li>
+            </div>
+
+        </div>
+    </section>
+
+<!-- ##################################################### Point cloud generation from monocular cameras--> 
+    <section id="pClouds2">
+
+        <li class="p1">Point cloud generation from monocular cameras.</li>   
+        <div class="content">
+            <img class src="http://127.0.0.1:5000/static/pClouds2/pc2.png" style= "width: 280px; display: block; align-self: center;"> 
+            <video width="260"  controls style="display: block; align-self: center;">
+                <source src="http://127.0.0.1:5000/static/pClouds2/pc2.mp4" type="video/mp4">
+            </video>
+            <div class="description"> 
+                <p class="p2">Calibration of monocular cameras to generate point clouds in a mobile platform. </p> 
+                <p class="p3">Summary:</p>
+                <li class="p4">College project.</li>
+                <li class="p4">Developed using ROS. Nodes in Python.</li>
+            </div>
+
+        </div>
+
+    </section>
+<!-- ##################################################### Bird view model and demo of real time implementation--> 
+    <section id="bView">
+
+        <li class="p1">Bird view system and real-time implementation.</li>   
+        <div class="content">
+            <img src="http://127.0.0.1:5000/static/bView/bView.png" style= "width: 240px; display: block; align-self: center;"> 
+            <video width="250"  controls style="display: block; align-self: center;">
+                <source src="http://127.0.0.1:5000/static/bView/offlineTest.mp4"  type="video/mp4">
+            </video>
+            <div class="description"> 
+                <p class="p2">Implementation of bird view system approach for driver assistance applications using multiple cameras. </p> 
+                <p class="p3">Summary:</p>
+                <li class="p4">Research project (Thesis-related).</li>
+                <li class="p4">Developed using ROS and OpenCV. Nodes in Python.</li>
+                <li class="p4">Validated to work offline at 30 FPS on Nvidia Geforce 940MX.</li>
+            </div>
+        </div>
+
+    </section>
+<!-- ##################################################### Fuzzy control strategy applied for CMOS sensors--> 
+    <section id="fControl">
+
+        <li class="p1">Fuzzy control strategy for CMOS sensors.</li>   
+        <div class="content">
+            <img src="http://127.0.0.1:5000/static/fControl/fuzz1.png"  style="width:420px; height: 170px; display: block; align-self: center;"> 
+
+            <video width="300" controls style="display: block; align-self: center;">
+                <source src="http://127.0.0.1:5000/static/fControl/fuzz2.mp4" type="video/mp4">
+            </video>            
+            <div class="description"> 
+                <p class="p2">Fuzzy control approach for monochromatic cameras exposed to non static lighting contidions. The objective is to avoid
+                    lossing as much features as possible in the images for an object detection module.</p> 
+                <p class="p3">Summary:</p>
+                <li class="p4">Research project (Thesis-related).</li>
+                <li class="p4">Developed using ROS, OpenCV and v4lutils. Nodes in Python.</li>
+                <li class="p4">Validated to work offline at 30 FPS on Nvidia Geforce 940MX.</li>
+                <li class="p4">Stability can be improved.</li>
+            </div>
+         </div>
+
+    </section>
+<!-- ##################################################### Object detection & instance segmentation on custom datasets--> 
+    <section id="odt">
+
+        <li class="p1">Object detection and instance segmentation.</li>   
+        <div class="content">
+
+            <img src="http://127.0.0.1:5000/static/odt/odt.png" style= "width: 340px; height: 170px; display: block; align-self: center;"> 
+
+            <video width="290" controls style="display: block; align-self: center;">
+                <source src="http://127.0.0.1:5000/static/odt/seg.mp4"  type="video/mp4">
+            </video>
+            <div class="description"> 
+                <p class="p2">Object detection and instance segmentation for automotive applications.</p> 
+                <p class="p3">Summary:</p>
+                <li class="p4">College project.</li>
+                <li class="p4">Custom datasets collected and processed using classical image processing techniques.</li>
+                <li class="p4">Models in Pytorch.</li>
+            </div> 
+        </div>
+
+    </section>
+<!-- ##################################################### 3D modeling and exportation to URDF for simulation --> 
+<section id="solid2urdf">
+
+    <li class="p1">3D models to URDF.</li>   
+
+    <div class="content">
+        <img src="http://127.0.0.1:5000/static/solid2urdf/urdf1.png" style= "width: 300px; height: 190px; display: block; align-self: center;"> 
+        <img src="http://127.0.0.1:5000/static/solid2urdf/urdf2.png" style= "width: 300px; height: 190px; display: block; align-self: center;"> 
+        <div class="description"> 
+            <p class="p2">STL files for UAV and exportation of model with physical properties for simulation in Gazebo.</p> 
+            <p class="p3">Summary:</p>
+            <li class="p4">College project.</li>
+            <li class="p4">3D files generated in Solidworks based on real dimensions of one drone.</li>
+            <li class="p4">URDF file generated manually.</li>
+        </div> 
+    </div>
+
+</section>
+<!-- ##################################################### Teleoperation software for mobile platforms--> 
+<section id="teleop">
+
+    <li class="p1">Teleoperation software for mobile platforms.</li>   
+    <div class="content">
+        <img src="http://127.0.0.1:5000/static/teleop/teleop1.png" style= "width: 210px; height: 210px; display: block; align-self: center;"> 
+        <div class="description"> 
+            <p class="p2">ROS nodes for teleoperation of a mobile robot used in harvesting activities.</p> 
+            <p class="p3">Summary:</p>
+            <li class="p4">Collaboration in a startup.</li>
+            <li class="p4">Distributed computing implemented by using multplie embedded devices.</li>
+            <li class="p4">ROS nodes and other modifications completed in Python.</li>
+        </div> 
+    </div>
+
+</section>
+<!-- ##################################################### --> 
+    </body>
+</html>
