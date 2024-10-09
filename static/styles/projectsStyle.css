@@ -5,6 +5,9 @@
     font-family: sans-serif;
 }
 
+@font-face {font-family: "United Sans Heavy"; src: url("UnitedSansHeavyPurdue.woff") format("woff"); font-weight: normal; font-style: normal;}
+
+
 /* ################################################################################################################################ */
 /*                                                                                                                           HEADER */
 .header{
