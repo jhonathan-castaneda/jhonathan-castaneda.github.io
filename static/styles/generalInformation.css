@@ -149,7 +149,7 @@
     .about{
         min-width: 250px; max-width: 20%;
         min-height: 500px;
-        border: 1px solid rgb(255, 0, 217);/**/
+        /*border: 1px solid rgb(255, 0, 217);/**/
     }
 
     .about img{width: 180px; height: 180px; display: block; position: relative; left: 50%; transform: translateX(-50%); border: 2px solid #555960;margin-top: 40px;}
