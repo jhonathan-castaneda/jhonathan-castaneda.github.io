@@ -143,3 +143,18 @@
                 .message p a{text-decoration: none; color:#555960; padding: 0px 4px; position: relative;} 
                 .message p a::after{content: ''; background-color:#555960;  width: 0%; height: 1.5px; position: absolute; bottom: 0; left: 0; transition: width 0.25s;}
                 .message p a:hover::after{width: 100%;}
+
+            .extmedia{grid-row: 8; grid-row-end: 12; margin-left: 10px; margin-right: 10px;  text-align: justify; border: 1px solid black; min-height: 180px; margin-top: 40px; font-size: 16px;}
+      
+            .link-container{padding-left: 10px; padding-right: 10px;}
+
+                .extmedia p a{text-decoration: none; color:white; padding: 0px 4px; position: relative; display: inline-block; /* Allow the background to wrap around the text */
+                } 
+                .extmedia p a::after{content: ''; background-color:white;  width: 0%; height: 1.5px; position: absolute; bottom: 0; left: 0; transition: width 0.25s;}
+                .extmedia p a:hover::after{width: 100%;}
+  
+            /* Hidden image container */
+            .image-container {display: none; padding: 0; margin: 0px; border: 1px solid #555960; width: 263px; height: 175px; overflow: hidden; background-color: #9D9795;}
+           
+                .image-container img {width: 263px; height: 150px; justify-self: center; object-fit: cover; border: 2px solid #555960; padding: 0px; margin: 0px;}
+                .image-container p {justify-self: center; font-size: 14px; color: white; }
