@@ -146,7 +146,26 @@
                     <p>Linkedin: <a href="https://www.linkedin.com/in/jhonathan-cano-1279341a0">Jhonathan Cano.</a></p>
                     <p>Github: <a href="https://github.com/jhonathan-castaneda">Jhonathan-castaneda.</a></p>                     
                 </div>
-
+                
+                <!-- ######################################################## HIGHLIGHTS ########################################################## -->                                
+                <div class="extmedia">
+                    <div class="sectionTitle"><p class="p18c">Highlights</p></div>
+                    <div class="link-container">
+                        <br>
+                        <p><a class="extlink" data-image="/static/media/highlights/infivalleR1.jpg" href="https://www.infivalle.gov.co/gestion-de-proyectos/ejecucion/nexo-global">Nexo Global Valle, selected projects - Infivalle</a></p>
+                        <br>
+                        <p><a class="extlink" data-image="/static/media/highlights/NexoSpring22.jpg" href="https://www.kaltura.com/index.php/extwidget/preview/partner_id/983291/uiconf_id/44472591/entry_id/1_nh670sa5/embed/dynamic?">Nexo Global spring symposium - Purdue</a></p>
+                        <br>  
+                        <p><a class="extlink" data-image="/static/media/highlights/researchUao.jpg" href="https://minciencias.gov.co/sala_de_prensa/galerias/taller-construyendo-pais-en-pradera">Taller Construyendo País - Minciencias</a></p>
+                        <br>                    
+                        <p><a class="extlink" data-image="/static/media/highlights/construyendoPais.jpg" href="https://www.uao.edu.co/lo-uao-de-la-semana/conoce-las-experiencias-de-la-pasantia-nexo-global/">Experiences while doing research abroad - UAO</a></p>
+                        <br>       
+                    </div>
+                    <div id="image-container" class="image-container">
+                        <img id="image-preview" src="" alt="Preview" />                  
+                        <p id="image-txt">More details are available in the link &rarr; </p>
+                    </div>
+                </div>
             </div>
 
             </div>
@@ -168,3 +187,33 @@
 
 </html>
 
+
+<script>
+
+document.querySelectorAll('.extlink').forEach(function(link) {
+    link.addEventListener('mouseover', function() {
+      const imageSrc = link.getAttribute('data-image');
+      const imageContainer = document.getElementById('image-container');
+      const imageElement = document.getElementById('image-preview');
+      
+      // Set the image source based on hovered link
+      imageElement.src = imageSrc;
+  
+      // Get the link's position and size
+      const linkRect = link.getBoundingClientRect();
+      
+      // Position the image container right below the hovered link
+      imageContainer.style.display = 'grid';
+      imageContainer.style.position = 'absolute'; // Ensures absolute positioning relative to the viewport
+      imageContainer.style.top = (window.scrollY + linkRect.top) -75 + 'px'; // Aligns with the top of the link
+      imageContainer.style.left = (window.scrollX + linkRect.left - imageContainer.offsetWidth - 10) + 'px'; // Places the container on the left
+    });
+  
+    link.addEventListener('mouseout', function() {
+      // Hide the image container when no longer hovering
+      const imageContainer = document.getElementById('image-container');
+      imageContainer.style.display = 'none';
+    });
+    
+  });
+</script>
