@@ -195,22 +195,17 @@ document.querySelectorAll('.extlink').forEach(function(link) {
       const imageSrc = link.getAttribute('data-image');
       const imageContainer = document.getElementById('image-container');
       const imageElement = document.getElementById('image-preview');
-      
-      // Set the image source based on hovered link
+        
       imageElement.src = imageSrc;
-  
-      // Get the link's position and size
       const linkRect = link.getBoundingClientRect();
-      
-      // Position the image container right below the hovered link
+
       imageContainer.style.display = 'grid';
-      imageContainer.style.position = 'absolute'; // Ensures absolute positioning relative to the viewport
-      imageContainer.style.top = (window.scrollY + linkRect.top) -75 + 'px'; // Aligns with the top of the link
-      imageContainer.style.left = (window.scrollX + linkRect.left - imageContainer.offsetWidth - 10) + 'px'; // Places the container on the left
+      imageContainer.style.position = 'absolute'; 
+      imageContainer.style.top = (window.scrollY + linkRect.top) -75 + 'px';
+      imageContainer.style.left = (window.scrollX + linkRect.left - imageContainer.offsetWidth - 10) + 'px'; 
     });
-  
+
     link.addEventListener('mouseout', function() {
-      // Hide the image container when no longer hovering
       const imageContainer = document.getElementById('image-container');
       imageContainer.style.display = 'none';
     });
