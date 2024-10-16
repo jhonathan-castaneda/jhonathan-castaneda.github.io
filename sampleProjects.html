@@ -1,183 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="/static/styles/projectsStyle.css">
         <title> SAMPLE PROJECTS </title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/styles/projectsStyle.css">  
     </head> 
-
     <body>
-<!-- ############################################################################################################################## --> 
-<!--                                                                                                                        NAV BAR --> 
+        <!--######################################## HEADER ########################################-->
         <div class="header">
-            <nav>
-                <ul class="navLinks">
-                    <li><a href="/generalInformation">General Information</a></li>
-                    <li><a href="/sampleProjects">Sample Projects</a></li>
-                </ul>
-                <div id="extraNav"> 
-                    <!--<button id="btnEn">  EN  </button>   --> 
-                    <!--<button type="btnEn">ES</button>   --> 
-                    <p class="emailHeader"> &#9888; OCT. 2024 - THIS PAGE WILL BE UPDATED IN THE FOLLOWING DAYS, BY NOW, FEEL FREE TO VISIT GENERAL INFO PAGE ALREADY UPDATED. THANKS FOR VISITING THIS SITE. &#9888; </p></li>
+            <div class="links">
+                <nav>
+                    <ul class="navLinks">
+                        <li class="p18"><a href="/generalInformation">General Information</a></li>
+                        <li class="p18"><a href="/sampleProjects">Samples</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="lan">
+
+                <p>OCT. 2024 - THIS SECTION IS BEING UPDATED, MORE DETAILS WILL BE ADDED SOON. BY NOW, 
+                    FEEL FREE TO VISIT GENERAL INFO PAGE ALREADY UPDATED. THANKS FOR VISITING THIS SITE.</p>
+                <!--button class="btn" id="enBtn">EN</button>
+                <button class="btn" id="esBtn">ES</button!-->
+            </div>
+        </div>
+        <!--////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="content">
+
+             <!-- ############################################################## MAIN CONTAINER ######################################################## -->             
+            <div class="mainBox">
+
+                <div class="sectionTitle"><p class="p18p40l">Samples - technical background</p></div>
+                <div class="experience">
+
+                    <div class="sampleItem" id="softwareSamples">
+                        <div class="sampleHeader">  <p class="p17cw">SOFTWARE</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left"  id="swP" onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="swN" onclick="nIm()">&#10095;</button>
+                            <img id="swIm" src="/static/media/samples/SW_EX1.jpg">                        
+                        </div>
+
+                        <div class="sampleDescription" id="softwareDescription">
+                            <p id="swTxt"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="sampleItem" id="RoboticSamples">
+                        <div class="sampleHeader">  <p class="p17cw">ROBOTICS</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left" id="rosP"onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="rosN" onclick="nIm()">&#10095;</button>
+                            <img id="rosIm" src="/static/media/samples/ROS_EX1.jpg">                        
+                        </div>
+                        <div class="sampleDescription" id="roboticsDescription">
+                            <p id="rosTxt"></p>
+                        </div>
+                    </div>
+
+                    <div class="sampleItem" id="cad2DSamples">
+                        <div class="sampleHeader">  <p class="p17cw">CAD 2D</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left" id="2dP"onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="2dN" onclick="nIm()">&#10095;</button>
+                            <img id="2dIm" src="/static/media/samples/AC2D_EX1.jpg">                        
+                        </div>
+                        <div class="sampleDescription" id="cad2dDescription">
+                            <p id="2dTxt"></p>
+                        </div>
+                    </div>
+
+                    <div class="sampleItem" id="cad3DSamples">
+                        <div class="sampleHeader">  <p class="p17cw">CAD 3D</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left" id="3dP" onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="3dN" onclick="nIm()">&#10095;</button>
+                            <img id="3dIm" src="/static/media/samples/SW3D_EX1.jpg">                        
+                        </div>
+                        <div class="sampleDescription" id="cad3dDescription">
+                            <p id="3dTxt"></p>
+                        </div>
+                    </div>
+
+                    <div class="sampleItem" id="cvSamples">
+                        <div class="sampleHeader">  <p class="p17cw">COMPUTER VISION</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left" id="cvP" onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="cvN" onclick="nIm()">&#10095;</button>
+                            <img id="cvIm" src="/static/media/samples/CV_EX1.jpg">                        
+                        </div>
+                        <div class="sampleDescription" id="cvDescription">
+                            <p id="cvTxt"></p>
+                        </div>
+                    </div>
+
                 </div>
 
-            </nav>
-        </div>
-<!-- ############################################################################################################################## --> 
-<div class="overview">
-    
-<!-- ##################################################### Point cloud data processing--> 
-    <section id="pClouds1">
-
-        <li class="p1">Point cloud data processing.</li>   
-        <div class="content">
-            <img src="/static/pClouds1/pc1.png" style= "width: 560px"> 
-            
-            <div class="description"> 
-                <p class="p2">Development of strategy to find and select key areas in a point cloud. 
-                    Key zones are located to start the reconstruction of the 3D profile without ocludded zones, based on mathematical models and feedback 
-                    from multiple sensors. </p> 
-                <p class="p3">Summary:</p>
-                <li class="p4">Collaboration in research project.</li>
-                <li class="p4">Algorithm developed and validated in Matlab.</li>
             </div>
 
-        </div>
-    </section>    
-    
-<!-- ##################################################### Teleoperation software for mobile platforms--> 
-<section id="teleop">
+            <!--div class="rightBox">
+                <div class="development">
+                    <div class="developmentTitle"><p class="p7">Professional development</p></div>
+                    <div class="rightSection">   
+                        <div class="certsItems">
+                            <div class="courses">
+                                <div class="c0"><p class="p6">Courses/seminars:</p></div>
+                                <div class="c1"><p class="p6">- IEEE COLCACI 2020</p></div>
+                                <div class="c2"><p class="p6">- Itensive formation in a second language - English B2.</p></div>
+                                <div class="c3"><p class="p6">- Methodologies for research.</p></div>
+                                <div class="c4"><p class="p6">- Responsible conducts for research (RCR Training).</p></div>
+                                <div class="c5"><p class="p6">- English Language Institute.</p></div>
+                                <div class="c6"><p class="p6">- Ethical Hacking.</p></div>
+                                <div class="c7"><p class="p6">- Cibersecurity.</p></div>    
+                            </div>
+                            <div class="exams">
+                                <div class="e0"><p class="p6">Certified exams:</p></div>
+                                <div class="e1"><p class="p6">- Solidworks CSWA (100%).</p></div>
+                                <div class="e2"><p class="p6">- TOEFL IBT (B2 - 85/120).</p></div>                        
+                            </div>
 
-    <li class="p1">Teleoperation software for mobile platforms.</li>   
-    <div class="content">
-        <img src="/static/teleop/teleop1.png" style= "width: 210px; height: 210px; display: block; align-self: center;"> 
-        <div class="description"> 
-            <p class="p2">ROS nodes for teleoperation of a mobile robot used in harvesting activities.</p> 
-            <p class="p3">Summary:</p>
-            <li class="p4">Collaboration in a startup.</li>
-            <li class="p4">Distributed computing implemented by using multplie embedded devices.</li>
-            <li class="p4">ROS nodes and other modifications completed in Python.</li>
-        </div> 
-    </div>
+                        </div>
+                        <div class="mediaItems">
 
-</section>
-<!-- ##################################################### Detail Engineering--> 
-<section id="teleop">
 
-    <li class="p1">AutoCAD & Solidworks models.</li>   
-    <div class="content">
-        <img src="/static/DetailEngineering/DetailEngineering.png" style= "width: 350px; height: 210px; display: block; align-self: center;"> 
-        <div class="description"> 
-            <p class="p2">Blueprints, diagrams and models for Detail Engineering.</p> 
-            <p class="p3">Summary:</p>
-            <li class="p4">Wiring diagrams.</li>
-            <li class="p4">Structural diagrams.</li>
-            <li class="p4">Mechanical concepts.</li>
-        </div> 
-    </div>
 
-</section>
+                        </div>
+                    </div>
+                </div>
+            </div-->
+        </div>      
 
-<!-- ##################################################### Point cloud generation from monocular cameras--> 
-    <section id="pClouds2">
-
-        <li class="p1">Point cloud generation from monocular cameras.</li>   
-        <div class="content">
-            <img class src="/static/pClouds2/pc2.png" style= "width: 280px; display: block; align-self: center;"> 
-            <video width="260"  controls style="display: block; align-self: center;">
-                <source src="/static/pClouds2/pc2.mp4" type="video/mp4">
-            </video>
-            <div class="description"> 
-                <p class="p2">Calibration of monocular cameras to generate point clouds in a mobile platform. </p> 
-                <p class="p3">Summary:</p>
-                <li class="p4">College project.</li>
-                <li class="p4">Developed using ROS. Nodes in Python.</li>
-            </div>
-
-        </div>
-
-    </section>
-<!-- ##################################################### Bird view model and demo of real time implementation--> 
-    <section id="bView">
-
-        <li class="p1">Bird view system and real-time implementation.</li>   
-        <div class="content">
-            <img src="/static/bView/bView.png" style= "width: 240px; display: block; align-self: center;"> 
-            <video width="250"  controls style="display: block; align-self: center;">
-                <source src="/static/bView/offlineTest.mp4"  type="video/mp4">
-            </video>
-            <div class="description"> 
-                <p class="p2">Implementation of bird view system approach for driver assistance applications using multiple cameras. </p> 
-                <p class="p3">Summary:</p>
-                <li class="p4">Research project (Thesis-related).</li>
-                <li class="p4">Developed using ROS and OpenCV. Nodes in Python.</li>
-                <li class="p4">Validated to work offline at 30 FPS on Nvidia Geforce 940MX.</li>
+        <!--######################################## FOOTER ########################################-->
+        <div class="footer">
+            <div class="last">
+                <p>&copy; 2024 Jhonathan Cano. All rights reserved. Last update for this site: October - 2024.</p>
+                <br>
+                <p>Unauthorized use, copying, or reproduction of any content on this website is prohibited.</p>
+                <p>Please zoom out in your browser if the content of this site is not shown properly.</p>
+                <p>Contact: jhonathan.castaneda@uao.edu.co</p>
             </div>
         </div>
-
-    </section>
-<!-- ##################################################### Fuzzy control strategy applied for CMOS sensors--> 
-    <section id="fControl">
-
-        <li class="p1">Fuzzy control strategy for CMOS sensors.</li>   
-        <div class="content">
-            <img src="/static/fControl/fuzz1.png"  style="width:420px; height: 170px; display: block; align-self: center;"> 
-
-            <video width="300" controls style="display: block; align-self: center;">
-                <source src="/static/fControl/fuzz2.mp4" type="video/mp4">
-            </video>            
-            <div class="description"> 
-                <p class="p2">Fuzzy control approach for monochromatic cameras exposed to non static lighting contidions. The objective is to avoid
-                    lossing as much features as possible in the images for an object detection module.</p> 
-                <p class="p3">Summary:</p>
-                <li class="p4">Research project (Thesis-related).</li>
-                <li class="p4">Developed using ROS, OpenCV and v4lutils. Nodes in Python.</li>
-                <li class="p4">Validated to work offline at 30 FPS on Nvidia Geforce 940MX.</li>
-                <li class="p4">Stability can be improved.</li>
-            </div>
-         </div>
-
-    </section>
-<!-- ##################################################### Object detection & instance segmentation on custom datasets--> 
-    <section id="odt">
-
-        <li class="p1">Object detection and instance segmentation.</li>   
-        <div class="content">
-
-            <img src="/static/odt/odt.png" style= "width: 340px; height: 170px; display: block; align-self: center;"> 
-
-            <video width="290" controls style="display: block; align-self: center;">
-                <source src="/static/odt/seg.mp4"  type="video/mp4">
-            </video>
-            <div class="description"> 
-                <p class="p2">Object detection and instance segmentation for automotive applications.</p> 
-                <p class="p3">Summary:</p>
-                <li class="p4">College project.</li>
-                <li class="p4">Custom datasets collected and processed using classical image processing techniques.</li>
-                <li class="p4">Models in Pytorch.</li>
-            </div> 
-        </div>
-
-    </section>
-<!-- ##################################################### 3D modeling and exportation to URDF for simulation --> 
-<section id="solid2urdf">
-
-    <li class="p1">3D models to URDF.</li>   
-
-    <div class="content">
-        <img src="/static/solid2urdf/urdf1.png" style= "width: 300px; height: 190px; display: block; align-self: center;"> 
-        <img src="/static/solid2urdf/urdf2.png" style= "width: 300px; height: 190px; display: block; align-self: center;"> 
-        <div class="description"> 
-            <p class="p2">STL files for UAV and exportation of model with physical properties for simulation in Gazebo.</p> 
-            <p class="p3">Summary:</p>
-            <li class="p4">College project.</li>
-            <li class="p4">3D files generated in Solidworks based on real dimensions of one drone.</li>
-            <li class="p4">URDF file generated manually.</li>
-        </div> 
-    </div>
-
-</section>
-
-<!-- ##################################################### --> 
     </body>
 </html>
+
+
+        <!--################################# SAMPLES SCROLLER ######################################-->
+
+<script>
+    const images = [
+        ["/static/media/samples/SW_EX1.jpg", "/static/media/samples/SW_EX2.jpg", "/static/media/samples/SW_EX3.jpg"],
+        ["/static/media/samples/ROS_EX1.jpg", "/static/media/samples/ROS_EX2.jpg", "/static/media/samples/ROS_EX3.jpg"],
+        ["/static/media/samples/AC2D_EX1.jpg", "/static/media/samples/SW2D_EX1.jpg", "/static/media/samples/SW2D_EX3.jpg"],
+        ["/static/media/samples/SW3D_EX1.jpg", "/static/media/samples/SW3D_EX2.jpg", "/static/media/samples/SW3D_EX3.jpg","/static/media/samples/SW3D_EX4.jpg"],
+        ["/static/media/samples/CV_EX1.jpg", "/static/media/samples/CV_EX2.jpg", "/static/media/samples/CV_EX3.jpg"]
+    ];
+    
+    let sDic = {"swP": "swIm", "rosP": "rosIm", "2dP": "2dIm", "3dP": "3dIm", "cvP": "cvIm", "swN": "swIm", "rosN": "rosIm", "2dN": "2dIm", "3dN": "3dIm", "cvN": "cvIm",};
+    let iDic = {"swP":  0, "rosP": 1, "2dP":  2, "3dP":  3, "cvP":  4, "swN":  0, "rosN": 1, "2dN":  2, "3dN":  3, "cvN":  4,};
+    let cIdx = [0,0,0,0,0];
+
+    function sIm(index, source) {
+        const imageElement = document.getElementById(  sDic[source]  );
+        imageElement.src = images[iDic[source]][index];
+    }
+
+    function nIm() {
+        const buttonId = event.target.id;
+        cIdx[iDic[buttonId]] = (cIdx[iDic[buttonId]] + 1) % images[iDic[buttonId]].length;
+        sIm(cIdx[iDic[buttonId]], buttonId);
+    }
+
+    function pIm() {
+        const buttonId = event.target.id;
+        cIdx[iDic[buttonId]] = (cIdx[iDic[buttonId]] - 1 + images[iDic[buttonId]].length) % images[iDic[buttonId]].length;
+        sIm(cIdx[iDic[buttonId]], buttonId);
+    }
+</script>
+
+
