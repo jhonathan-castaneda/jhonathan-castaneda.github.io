@@ -16,7 +16,7 @@
                     </ul>
                 </nav>
             </div>
-            <p> &#9888; THIS SECTION IS BEING UPDATED, MORE DETAILS WILL BE ADDED SOON. THANKS FOR VISITING THIS SITE &#9888;</p>
+            <p> &#9888; THIS SECTION IS UNDER UPDATES, MORE DETAILS WILL BE ADDED SOON. THANKS FOR VISITING THIS SITE &#9888;</p>
 
             <div class="lan">
                 <!--button class="btn" id="enBtn">EN</button>
@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="sampleDescription" id="softwareDescription">
-                            <p id="swTxt"></p>
+                            <p id="swTxt">Multivariable control for non-linear system in Matlab-Simulink.</p>
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@
                             <img id="rosIm" src="/static/media/samples/ROS_EX1.jpg">                        
                         </div>
                         <div class="sampleDescription" id="roboticsDescription">
-                            <p id="rosTxt"></p>
+                            <p id="rosTxt">ROS1 packages for mobile robot teleoperation.</p>
                         </div>
                     </div>
 
@@ -67,7 +67,7 @@
                             <img id="2dIm" src="/static/media/samples/AC2D_EX1.jpg">                        
                         </div>
                         <div class="sampleDescription" id="cad2dDescription">
-                            <p id="2dTxt"></p>
+                            <p id="2dTxt">Wiring diagram for an industrial controller in AutoCAD.</p>
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@
                             <img id="3dIm" src="/static/media/samples/SW3D_EX1.jpg">                        
                         </div>
                         <div class="sampleDescription" id="cad3dDescription">
-                            <p id="3dTxt"></p>
+                            <p id="3dTxt">Mechanical assembly and design for mechanized components in Solidworks.</p>
                         </div>
                     </div>
 
@@ -91,7 +91,7 @@
                             <img id="cvIm" src="/static/media/samples/CV_EX1.jpg">                        
                         </div>
                         <div class="sampleDescription" id="cvDescription">
-                            <p id="cvTxt"></p>
+                            <p id="cvTxt">Point cloud generation from monocular cameras in ROS1.</p>
                         </div>
                     </div>
 
@@ -144,7 +144,6 @@
     </body>
 </html>
 
-
         <!--################################# SAMPLES SCROLLER ######################################-->
 
 <script>
@@ -153,16 +152,33 @@
         ["/static/media/samples/ROS_EX1.jpg", "/static/media/samples/ROS_EX2.jpg", "/static/media/samples/ROS_EX3.jpg"],
         ["/static/media/samples/AC2D_EX1.jpg", "/static/media/samples/SW2D_EX1.jpg", "/static/media/samples/SW2D_EX3.jpg"],
         ["/static/media/samples/SW3D_EX1.jpg", "/static/media/samples/SW3D_EX2.jpg", "/static/media/samples/SW3D_EX3.jpg","/static/media/samples/SW3D_EX4.jpg"],
-        ["/static/media/samples/CV_EX1.jpg", "/static/media/samples/CV_EX2.jpg", "/static/media/samples/CV_EX3.jpg"]
+        ["/static/media/samples/CV_EX1.jpg", "/static/media/samples/CV_EX2.jpg", "/static/media/samples/CV_EX3.jpg", "/static/media/samples/CV_EX4.jpg"]
+    ];
+
+    const descs = [
+        ["Multivariable control for non-linear system in Matlab-Simulink.", "Desktop app for stress analysis in a static structure.", "Process automation using SystemD, Python and shell scripting."],
+        ["ROS packages for mobile robot teleoperation.", "Drone modeling - URDF.", "GAZEBO simulation for automotive applications."],
+        ["Wiring diagram for an industrial controller in AutoCAD.", "2D drawing for replacement components in Solidworks.", "2D drawing for replacement components in Solidworks."],
+        ["Mechanical assembly and design for mechanized components in Solidworks.", "Design and assembly for 3D-printed SBC case in Solidworks.", "Modeling of replacement component in Solidworks.","Modeling and rendering of a pneumatic actuator for simulation."],
+        ["Point cloud generation from monocular cameras in ROS1.", "Instance segmentation for automotive applications using TensorFlow.", "Multi-object detection and tracking for automotive applications using Tensorflow.", "LiDAR data processing using PCL and Matlab."],
+
+
     ];
     
     let sDic = {"swP": "swIm", "rosP": "rosIm", "2dP": "2dIm", "3dP": "3dIm", "cvP": "cvIm", "swN": "swIm", "rosN": "rosIm", "2dN": "2dIm", "3dN": "3dIm", "cvN": "cvIm",};
     let iDic = {"swP":  0, "rosP": 1, "2dP":  2, "3dP":  3, "cvP":  4, "swN":  0, "rosN": 1, "2dN":  2, "3dN":  3, "cvN":  4,};
     let cIdx = [0,0,0,0,0];
 
+    let tDic = {"swP": "swTxt", "rosP": "rosTxt", "2dP": "2dTxt", "3dP": "3dTxt", "cvP": "cvTxt", "swN": "swTxt", "rosN": "rosTxt", "2dN": "2dTxt", "3dN": "3dTxt", "cvN": "cvTxt",};
+
+
+
     function sIm(index, source) {
         const imageElement = document.getElementById(  sDic[source]  );
         imageElement.src = images[iDic[source]][index];
+
+        const txtElement = document.getElementById(  tDic[source]  );
+        txtElement.textContent = descs[iDic[source]][index];
     }
 
     function nIm() {
