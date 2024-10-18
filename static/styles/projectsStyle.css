@@ -115,5 +115,12 @@
                     
         .sampleDescription{
             min-height: 100px;
+            align-content: center;
             /*border: 1px solid rgb(255, 140, 0);/**/
         }
+            .sampleDescription p{
+                font-size: 18px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-justify: justify;
+            }
