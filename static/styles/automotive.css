@@ -6,7 +6,7 @@
 .p18{font-size: 18px;}      .p18p40l{font-size: 18px; padding-left: 40px;}      .p18c{font-size: 18px; position: relative; left: 50%; transform: translateX(-50%);}
                             .p18p20l{font-size: 18px; padding-left: 20px;}      .p17cw{font-size: 17px; position: relative; left: 50%; transform: translateX(-50%); color: white;}
 
-@font-face {font-family: "United Sans Heavy"; src: url("../fonts/UnitedSansHeavyPurdue.woff") format("woff"); font-weight: normal; font-style: normal;}
+@font-face {font-family: "United Sans Heavy"; src: url("UnitedSansHeavyPurdue.woff") format("woff"); font-weight: normal; font-style: normal;}
     
 /*################################################################# HEADER ################################################################*/
 
