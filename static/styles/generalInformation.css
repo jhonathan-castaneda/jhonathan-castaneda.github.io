@@ -1,0 +1,160 @@
+/*############################################################# FONTS & GENERAL ###########################################################*/
+
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+                            
+
+.p17{font-size: 17px;}
+.p18{font-size: 18px;}      .p18p40l{font-size: 18px; padding-left: 40px;}      .p18c{font-size: 18px; position: relative; left: 50%; transform: translateX(-50%);}
+                            .p18p20l{font-size: 18px; padding-left: 20px;}
+
+@font-face {font-family: "United Sans Heavy"; src: url("UnitedSansHeavyPurdue.woff") format("woff"); font-weight: normal; font-style: normal;}
+    
+/*################################################################# HEADER ################################################################*/
+
+.header{background: #CFB991; height: 50px; max-width: 100%; min-width: 600px; display: flex; /*border: 1px solid blue;/**/}
+
+    .links{align-content: center; width: 85%; min-width: 60%;}
+        
+        nav{justify-content: space-between;}
+            /*.navLinks{ }*/ 
+            .navLinks li{display: inline-block; margin: 0px 25px;} 
+            .navLinks li a{text-decoration: none; color: rgb(0, 0, 0); position: relative;}
+            .navLinks li a::after{content: ''; background: rgb(0, 0, 0); width: 0%; height: 1.5px; position: absolute; bottom: 0;
+                 left: 0; transition: width 0.2s;}
+                
+            .navLinks li a:hover::after{width: 100%;}   
+                
+    .lan{background: #CFB991; height: 50px; width: 15%; display: grid; grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); 
+        padding-left: 20px; padding-right: 20px; gap: 5px; align-content: center; justify-content: center;}
+
+        .btn{background-color:transparent; border: 1px solid black;}   .btn:hover{background-color: white;}
+        /*.btnEs{background-color:#C4BFC0;} .btnEs:hover{background-color: black;color:#C4BFC0;}*/
+
+/*################################################################# FOOTER ################################################################*/
+
+.footer{background: #CFB991; min-height: 100px; max-width: 100%; min-width: 600px; display: grid; /*border: 1px solid blue;/**/}
+    .last{container-type: inline-size; align-content: center; padding-left: 10px; padding-top: 20px; padding-bottom: 20px;}
+        @container(width < 1300px){
+            .last li{font-size: 14px; text-indent: -1.5em;}
+            .last p{font-size: 14px;}
+            }
+        @container(width < 610px){
+            .last li{font-size: 13px; text-indent: -1.5em;}
+            .last p{font-size: 13px;}
+            }
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+        
+.content{
+    background: #9D9795; min-width: 600px; max-width: 100%; min-height: 665px; display: flex; justify-content: space-between; /*border: 1px solid blue;/**/}
+    
+    /*MIN IN PIXELS FOR 2 COLUMNS IS 600PX, 350PX FOR ACADEMY & 250PX FOR ABOUT*/
+    .academy{min-width: 350px; width: 80%; display: grid; border-right: 1px solid black;/*border: 1px solid rgb(255, 0, 217);/**/}
+        
+        .sectionTitle{display: flex; height:  25px; align-items: center; background: linear-gradient(to bottom, #8E6F3E 100%, #9D9795 0%); background-size: 100% 0%; background-repeat: no-repeat; animation: background-loading 1s forwards;}
+            @keyframes background-loading {/* RAILWAY GRAY TO AGED AFTER LOADING*/
+                0% {background-size: 100% 0%;}  
+                100% {background-size: 100% 100%;} }
+     
+        .studies{ container-type: inline-size; min-height: 320px; display: grid; margin: 10px; border: 1px solid black;}
+            
+            .head {container-type: inline-size; height: 45px; font-size: 18px; padding:10px; /*border: 1px solid rgb(43, 0, 255);/**/}
+            .head li{text-indent: -1.5em; padding-left: 1.5em; /*border: 1px solid rgb(0, 255, 38);/**/}
+
+                @container(width < 610px){
+                    .head{height: 65px;}
+                    .head li{height: 55px; font-size: 14px; padding-top:10px; padding-bottom: 10px;text-indent: -1.5em; /*border: 1px solid rgb(0, 255, 38);/**/}        
+                }
+
+            .details{display: flex; min-height: 275px; flex-wrap: wrap; margin-left: 10px; margin-right: 10px;/*border: 1px solid rgb(0, 208, 255);/**/}
+
+                .details img{ width: 350px; height: 200px; margin-left: 20px; margin-right: 20px; margin-top: 30px; border: 1px solid #555960; }
+                .highlights{margin-top: 30px; margin-bottom: 30px;}
+                .highlights li{font-size: 18px; text-indent: -1.5em; padding-left: 1.5em;}
+                .highlights p{font-size: 16px;}
+
+                    @container(width < 610px){
+                        .details{ display: flex; min-height: 205px;flex-wrap: wrap; /*border: 1px solid rgb(0, 208, 255);/**/}
+                        .details img{align-self: center; width: 263px; height: 150px;}
+                        .highlights li{font-size: 14px; text-indent: -1.5em;}
+                        .highlights p{font-size: 12px;}
+                        }
+
+                        @container(width < 1300px){
+                            .highlights li{font-size: 14px; text-indent: -1.5em;}
+                            .highlights p{font-size: 12px;}
+                            }
+
+        .publications{container-type: inline-size; min-height: 125px; display: grid; /*border: 1px solid rgb(255, 0, 217);/**/}
+            .sgr{min-height:100px; position: relative; align-content: center; padding-left: 20px; border: 1px solid black; margin: 10px;}
+                
+                .sgr li{text-indent: -1.5em; padding-left: 1.5em;}
+
+                .sgr li a{text-decoration: none; color: white; padding: 0px 4px; position: relative;}
+                .sgr li a::after{content: ''; background: white; width: 0%; height: 1.5px; position: absolute; bottom: 0; left: 0; transition: width 0.25s;}    
+                .sgr li a:hover::after{width: 100%;}    
+                    
+                    @container(width < 610px){
+                        .sgr li{font-size: 12px; text-indent: -1.5em;};
+                    }
+                        
+
+                
+        .experience{min-height: 220px; display: grid; /*border: 1px solid rgb(255, 0, 217);/**/}
+             
+            .jobs{container-type: inline-size;  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin: 10px; min-height: 300px; gap: 10px; /*border: 1px solid rgb(0, 208, 255);/**/}
+                
+                .item{display: grid; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; border: 1px solid rgb(0, 0, 0);/**/}
+                                  
+                    .extref{min-height: 50px; align-content: center; font-size: 17px; /*border: 1px solid rgb(255, 51, 0);/**/}
+                                                         
+                        .extref p a{text-decoration: none; color: white; padding: 0px 4px; position: relative;}
+                        .extref p a::after{content: ''; background: white; width: 0%; height: 1.5px; position: absolute; bottom: 0; left: 0; transition: width 0.25s;} 
+                        .extref p a:hover::after{width: 100%;} 
+                    
+                    .extdetails{min-height: 100px; text-justify: justify; align-content: center; padding-top: 5px; padding-bottom: 5px; font-size: 17px;/*border: 1px solid rgb(20, 4, 20);/**/}
+                    .extdetailsp p{font-size:17px;}
+                    .extdetails li{font-size:15px; text-indent:-1.5em; padding-left: 1.5em;margin-left: 10px;}
+
+
+                    .exthightlights{min-height: 140px; padding-top: 10px; padding-bottom: 10px; /*border: 1px solid rgb(0, 0, 255);/**/}
+                    .exthightlights p{font-size:17px;}
+                    .exthightlights li{font-size:15px; text-indent:-1.5em; padding-left: 1.5em; margin-left: 10px;}
+            
+                        @container(width < 610px){
+                            .extref p{ font-size: 14px;}  ;
+                        }   
+                        @container(width < 1100px){
+                            .extdetails p, .exthightlights p{ font-size: 14px; /*color: aqua;/**/ }  ;
+                        }   
+                        @container(width < 1100px){
+                            .extdetails li, .exthightlights li{ font-size: 13px; /*color: rgb(0, 26, 255);/**/ }  ;
+                        }   
+
+
+
+
+    .about{min-width: 250px; max-width: 20%; min-height: 500px; /*border: 1px solid rgb(255, 0, 217);/**/}
+        
+    .about img{width: 180px; height: 180px; display: block; position: relative; left: 50%; transform: translateX(-50%); border: 2px solid #555960;margin-top: 40px;}
+        
+            .message{grid-row: 8; grid-row-end: 12; margin-left: 10px; margin-right: 10px; padding-left: 20px; padding-right: 20px; text-align: justify; border: 1px solid #555960; min-height: 180px; margin-top: 40px; font-size: 16px;}
+        
+                .message p a{text-decoration: none; color:#555960; padding: 0px 4px; position: relative;} 
+                .message p a::after{content: ''; background-color:#555960;  width: 0%; height: 1.5px; position: absolute; bottom: 0; left: 0; transition: width 0.25s;}
+                .message p a:hover::after{width: 100%;}
+
+            .extmedia{grid-row: 8; grid-row-end: 12; margin-left: 10px; margin-right: 10px;  text-align: justify; border: 1px solid black; min-height: 180px; margin-top: 40px; font-size: 16px;}
+      
+            .link-container{padding-left: 10px; padding-right: 10px;}
+
+                .extmedia p a{text-decoration: none; color:white; padding: 0px 4px; position: relative; display: inline-block; /* Allow the background to wrap around the text */
+                } 
+                .extmedia p a::after{content: ''; background-color:white;  width: 0%; height: 1.5px; position: absolute; bottom: 0; left: 0; transition: width 0.25s;}
+                .extmedia p a:hover::after{width: 100%;}
+  
+            /* Hidden image container */
+            .image-container {display: none; padding: 0; margin: 0px; border: 1px solid #555960; width: 263px; height: 175px; overflow: hidden; background-color: #9D9795;}
+           
+                .image-container img {width: 263px; height: 150px; justify-self: center; object-fit: cover; border: 2px solid #555960; padding: 0px; margin: 0px;}
+                .image-container p {justify-self: center; font-size: 14px; color: white; }
