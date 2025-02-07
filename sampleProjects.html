@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> SAMPLE PROJECTS </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/styles/projectsStyle.css">  
+    </head> 
+    <body>
+        <!--######################################## HEADER ########################################-->
+        <div class="header">
+            <div class="links">
+                <nav>
+                    <ul class="navLinks">
+                        <li class="p18"><a href="/generalInformation">General information</a></li>
+                        <li class="p18"><a href="/sampleProjects">Samples</a></li>
+                        <li class="p18"><a href="/automotive">Automotive</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p> &#9888; THIS SECTION IS UNDER UPDATE, MORE DETAILS WILL BE ADDED SOON. THANKS FOR VISITING THIS SITE &#9888;</p>
+
+            <div class="lan">
+                <!--button class="btn" id="enBtn">EN</button>
+                <button class="btn" id="esBtn">ES</button!-->
+            </div>
+        </div>
+        <!--////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="content">
+
+             <!-- ############################################################## MAIN CONTAINER ######################################################## -->             
+            <div class="mainBox">
+
+                <div class="sectionTitle"><p class="p18p40l">Samples - technical background</p></div>
+                <div class="experience">
+
+                    <div class="sampleItem" id="softwareSamples">
+                        <div class="sampleHeader">  <p class="p17cw">SOFTWARE</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left"  id="swP" onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="swN" onclick="nIm()">&#10095;</button>
+                            <img id="swIm" src="/static/media/samples/SW_EX1.jpg">                        
+                        </div>
+
+                        <div class="sampleDescription" id="softwareDescription">
+                            <p id="swTxt">Multivariable control for non-linear system in Matlab-Simulink.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="sampleItem" id="RoboticSamples">
+                        <div class="sampleHeader">  <p class="p17cw">ROBOTICS</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left" id="rosP"onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="rosN" onclick="nIm()">&#10095;</button>
+                            <img id="rosIm" src="/static/media/samples/ROS_EX1.jpg">                        
+                        </div>
+                        <div class="sampleDescription" id="roboticsDescription">
+                            <p id="rosTxt">ROS1 packages for mobile robot teleoperation.</p>
+                        </div>
+                    </div>
+
+                    <div class="sampleItem" id="cad2DSamples">
+                        <div class="sampleHeader">  <p class="p17cw">CAD 2D</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left" id="2dP"onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="2dN" onclick="nIm()">&#10095;</button>
+                            <img id="2dIm" src="/static/media/samples/AC2D_EX1.jpg">                        
+                        </div>
+                        <div class="sampleDescription" id="cad2dDescription">
+                            <p id="2dTxt">Wiring diagram for an industrial controller in AutoCAD.</p>
+                        </div>
+                    </div>
+
+                    <div class="sampleItem" id="cad3DSamples">
+                        <div class="sampleHeader">  <p class="p17cw">CAD 3D</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left" id="3dP" onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="3dN" onclick="nIm()">&#10095;</button>
+                            <img id="3dIm" src="/static/media/samples/SW3D_EX1.jpg">                        
+                        </div>
+                        <div class="sampleDescription" id="cad3dDescription">
+                            <p id="3dTxt">Mechanical assembly and design for mechanized components in Solidworks.</p>
+                        </div>
+                    </div>
+
+                    <div class="sampleItem" id="cvSamples">
+                        <div class="sampleHeader">  <p class="p17cw">COMPUTER VISION</p>  </div>
+                        <div class="imgContainer">
+                            <button class="arrow-left" id="cvP" onclick="pIm()">&#10094;</button>
+                            <button class="arrow-right" id="cvN" onclick="nIm()">&#10095;</button>
+                            <img id="cvIm" src="/static/media/samples/CV_EX1.jpg">                        
+                        </div>
+                        <div class="sampleDescription" id="cvDescription">
+                            <p id="cvTxt">Point cloud generation from monocular cameras in ROS1.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--div class="rightBox">
+                <div class="development">
+                    <div class="developmentTitle"><p class="p7">Professional development</p></div>
+                    <div class="rightSection">   
+                        <div class="certsItems">
+                            <div class="courses">
+                                <div class="c0"><p class="p6">Courses/seminars:</p></div>
+                                <div class="c1"><p class="p6">- IEEE COLCACI 2020</p></div>
+                                <div class="c2"><p class="p6">- Itensive formation in a second language - English B2.</p></div>
+                                <div class="c3"><p class="p6">- Methodologies for research.</p></div>
+                                <div class="c4"><p class="p6">- Responsible conducts for research (RCR Training).</p></div>
+                                <div class="c5"><p class="p6">- English Language Institute.</p></div>
+                                <div class="c6"><p class="p6">- Ethical Hacking.</p></div>
+                                <div class="c7"><p class="p6">- Cibersecurity.</p></div>    
+                            </div>
+                            <div class="exams">
+                                <div class="e0"><p class="p6">Certified exams:</p></div>
+                                <div class="e1"><p class="p6">- Solidworks CSWA (100%).</p></div>
+                                <div class="e2"><p class="p6">- TOEFL IBT (B2 - 85/120).</p></div>                        
+                            </div>
+
+                        </div>
+                        <div class="mediaItems">
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div-->
+        </div>      
+
+        <!--######################################## FOOTER ########################################-->
+        <div class="footer">
+            <div class="last">
+                <p>&copy; 2024 Jhonathan Cano. All rights reserved. Last update for this site: October - 2024.</p>
+                <br>
+                <p>Unauthorized use, copying, or reproduction of any content on this website is prohibited.</p>
+                <p>Please zoom out in your browser if the content of this site is not shown properly.</p>
+                <p>Contact: jhonathan.castaneda@uao.edu.co</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+        <!--################################# SAMPLES SCROLLER ######################################-->
+
+<script>
+    const images = [
+        ["/static/media/samples/SW_EX1.jpg", "/static/media/samples/SW_EX2.jpg", "/static/media/samples/SW_EX3.jpg"],
+        ["/static/media/samples/ROS_EX1.jpg", "/static/media/samples/ROS_EX2.jpg", "/static/media/samples/ROS_EX3.jpg"],
+        ["/static/media/samples/AC2D_EX1.jpg", "/static/media/samples/SW2D_EX1.jpg", "/static/media/samples/SW2D_EX3.jpg"],
+        ["/static/media/samples/SW3D_EX1.jpg", "/static/media/samples/SW3D_EX2.jpg", "/static/media/samples/SW3D_EX3.jpg","/static/media/samples/SW3D_EX4.jpg"],
+        ["/static/media/samples/CV_EX1.jpg", "/static/media/samples/CV_EX2.jpg", "/static/media/samples/CV_EX3.jpg", "/static/media/samples/CV_EX4.jpg"]
+    ];
+
+    const descs = [
+        ["Multivariable control for non-linear system in Matlab-Simulink.", "Desktop app for stress analysis in a static structure.", "Process automation using SystemD, Python and shell scripting."],
+        ["ROS packages for mobile robot teleoperation.", "Drone modeling - URDF.", "GAZEBO simulation for automotive applications."],
+        ["Wiring diagram for an industrial controller in AutoCAD.", "2D drawing for replacement components in Solidworks.", "2D drawing for replacement components in Solidworks."],
+        ["Mechanical assembly and design for mechanized components in Solidworks.", "Design and assembly for 3D-printed SBC case in Solidworks.", "Modeling of replacement component in Solidworks.","Modeling and rendering of a pneumatic actuator for simulation."],
+        ["Point cloud generation from monocular cameras in ROS1.", "Instance segmentation for automotive applications using TensorFlow.", "Multi-object detection and tracking for automotive applications using Tensorflow.", "LiDAR data processing using PCL and Matlab."],
+
+
+    ];
+    
+    let sDic = {"swP": "swIm", "rosP": "rosIm", "2dP": "2dIm", "3dP": "3dIm", "cvP": "cvIm", "swN": "swIm", "rosN": "rosIm", "2dN": "2dIm", "3dN": "3dIm", "cvN": "cvIm",};
+    let iDic = {"swP":  0, "rosP": 1, "2dP":  2, "3dP":  3, "cvP":  4, "swN":  0, "rosN": 1, "2dN":  2, "3dN":  3, "cvN":  4,};
+    let cIdx = [0,0,0,0,0];
+
+    let tDic = {"swP": "swTxt", "rosP": "rosTxt", "2dP": "2dTxt", "3dP": "3dTxt", "cvP": "cvTxt", "swN": "swTxt", "rosN": "rosTxt", "2dN": "2dTxt", "3dN": "3dTxt", "cvN": "cvTxt",};
+
+
+
+    function sIm(index, source) {
+        const imageElement = document.getElementById(  sDic[source]  );
+        imageElement.src = images[iDic[source]][index];
+
+        const txtElement = document.getElementById(  tDic[source]  );
+        txtElement.textContent = descs[iDic[source]][index];
+    }
+
+    function nIm() {
+        const buttonId = event.target.id;
+        cIdx[iDic[buttonId]] = (cIdx[iDic[buttonId]] + 1) % images[iDic[buttonId]].length;
+        sIm(cIdx[iDic[buttonId]], buttonId);
+    }
+
+    function pIm() {
+        const buttonId = event.target.id;
+        cIdx[iDic[buttonId]] = (cIdx[iDic[buttonId]] - 1 + images[iDic[buttonId]].length) % images[iDic[buttonId]].length;
+        sIm(cIdx[iDic[buttonId]], buttonId);
+    }
+</script>
+
+

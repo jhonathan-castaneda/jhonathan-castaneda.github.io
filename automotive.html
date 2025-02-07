@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AUTOMOTIVE</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- {% load static %}  LINE FOR DJANGO VERSION, NOT DEPLOYED YET -->
+        <link rel="stylesheet" type="text/css" href="/static/styles/automotive.css">
+    </head>
+
+    <body>
+        <!--######################################## HEADER ########################################-->
+        <div class="header">
+            <div class="links">
+                <nav>
+                    <ul class="navLinks">
+                        <li class="p18"><a href="/generalInformation">General information</a></li>
+                        <li class="p18"><a href="/sampleProjects">Samples</a></li>
+                        <li class="p18"><a href="/automotive">Automotive</a></li>
+                        <!--li class="p18"><a href="/rosBlog">ROS blog</a></li!-->
+                    </ul>
+                </nav>
+            </div>
+            <!--div class="lan">
+                <button class="btn" id="enBtn">EN</button>
+                <button class="btn" id="esBtn">ES</button
+        </div-->
+        </div>
+        <!--////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="content">
+          <div class="mainBox">
+            <div class="ilustrations" id="row1">
+              <div class="sample">
+                <div class="sampleHeader">  <p class="p18cb">Blind spots monitoring system</p>  </div>
+                <div class="mediaContainer">
+                  <!--button class="arrow-left" id="macP"onclick="pIm()">&#10094;</button-->
+                  <!--button class="arrow-right" id="macN" onclick="nIm()">&#10095;</button-->
+                  <video src="/static/media/samples/MAC_A.mp4" controls autoplay></video>
+                </div>
+                <div class="sampleDescription" id="macDescription">
+                  <p id="rosTxt">Bird view in real time. 
+                    The detected objects around the vehicle are shown to the driver with their
+                    estimated X,Y position.
+                    White tags for visible objects, 
+                    green for those in blind spots and red for objects less than 1 meter
+                    from the vehicle.<br><br>
+                    Note. The frontal and rear cameras had issues due to vibrations for this test 
+                    as their mounts were not fixed. The left and right cameras had fixed mounts and 
+                    kept a congruent perspective as appreciated in this recording. 
+                  </p>
+                </div>
+
+                <div class="description" id="row2">
+                  <div class="pipelineInfo">
+                    <div class="sampleHeaderB">  <p class="p18cw">How does the system work?</p>  </div>
+                    <li>Image processing: Real-time images (at 30 FPS) are captured by four nearly-fisheye cameras installed around the vehicle.</li><br>
+
+                    <li>Perspective transformations: A remapping model (RM) based on homogeneous transformation matrixes (HMT) and camera matrixes takes all the pixels from the cameras and matches them with their
+                      equivalent location into the image from a virtual camera in real time.</li><br>
+                    <li>Object detection and tracking (ODT): A convolutional neural network (CNN) detects three classes of objects in the original images of each camera, while another CNN tracks the objects.</li><br>
+                    <li>Position estimation: The point of contact with the ground plane for each bounding box of the detections is estimated by the RM. Then, the equivalent real-world X,Y location of the 
+                      object is estimated with a variant of the RM.
+                    </li><br>
+                    <li>Warnings generation: One nominal and two critical warning zones around the vehicle, characterized by a NIOSH-based test are triggered once an object gets inside them. As a 
+                      result, three different levels of warnings are provided to the driver.
+                    </li><br>
+                    <li>Sensor management: During the system operation, four fuzzy-logic aperture and gain controllers adjust the CMOS sensors of the cameras to ensure the objects around can be 
+                      detected regardless of the variations in the illumination due to a dynamic environment while driving.</li><br>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ################################## RESULTS AND FUTURE WORK ####################################### -->             
+          <div class="experience">
+            <div class="sampleHeader"><p class="p18cb">Results and future work </p></div>
+            <div class="jobs">
+              <!-- ############################### SYSTEM PERFORMANCE ######################################### -->             
+              <div class="item" id="highlights">
+                  <div class="sampleHeaderB">  <p class="p18cw">Highlights</p>  </div>
+                  <div class="extdetails">
+
+                    <li>ROS nodes from scratch: The software for this project was developed before the GPT models release. Then, it is clear from AI-generated code.</li><br>
+                                           
+                    <li>System calibration: A complementary perception module for extrinsic calibration was successfully implemented.
+                      This generates the RT matrixes for the system's cameras, the virtual camera matrix, and calculates a set of "wrapping maps" to speed
+                      up the generation of the bird view image, all this, just by detecting some ArUco landmarks around the vehicle.</li><br>
+
+                    <li>Bird view module (isolated from ODT module): Implemented from scratch, this module got to work at 30 FPS, even in low-resource devices such as an Nvidia GeForce 940MX,
+                      where the compute capability or CC is 5.0 (lower than the 5.3 offered by a Jetson Nano).</li><br>                     
+                    </div>
+
+              </div>
+              <!-- ###################################### FUTURE WORK ######################################### -->                                 
+              <div class="item" id="future">
+                <div class="sampleHeaderB">  <p class="p18cw">Future work</p>  </div>
+                <div class="extdetails">
+                  <li>Fuzzy controllers: Although these controllers worked, it is necessary to implement further
+                    research and development to reduce oscillations in the overall exposure of images when the luminance
+                    varies too fast. Integrating a Kalman filter or implementing an ANFIS would help, however, these 
+                    approaches need to be tested.</li><br>
+
+                  <li>Position estimations: The position estimation in images, based on bounding boxes and the RM developed needs further
+                    improvement. This strategy is not accurate for areas where the FOV of the system cameras is overlapped.
+                  </li><br>
+
+                  <li>FMCW radars integration: IWR6843 AOPEVM modules were acquired to increase the robustness of the system, however, they were not integrated
+                    due to time limitations. They would be integrated by developing a sensor fusion strategy.</li><br>
+
+                </div>
+              </div>
+              <!-- ################################# PROJECT STATUS (2024) #################################### -->                                 
+              <div class="item" id="status">
+                <div class="sampleHeaderB">  <p class="p18cw">Project status (2024)</p>  </div>
+                <div class="extdetails">
+
+                  <li>
+                    A REST-based user interface for the system is under development, and multiple features are being incorporated into it, 
+                    such as sensor management, SBC monitoring, and a toolbox for easy usage of the calibration module of the system.
+                  </li><br>
+                  <li>
+                    The migration of software from Python to C, and from ROS1 to ROS2
+                    started in the first semester of 2024, however, there is still a lot of work to complete. After this migration, the system should 
+                    have a higher performance in terms of speed and hardware usage.
+                  </li><br>
+                  <li>
+                    Other efforts related to research and in-field testing are stopped due to limitations in time and funding.                 
+                  </li><br>
+
+                </div>
+              </div>
+
+          </div>
+        </div>          
+        
+        </div>
+        <!--######################################## FOOTER ########################################-->
+        <div class="footer">
+            <div class="last">
+                <p>&copy; 2024 Jhonathan Cano. All rights reserved. Last update for this site: October - 2024.</p>
+                <br>
+                <p>Unauthorized use, copying, or reproduction of any content on this website is prohibited.</p>
+                <p>Please zoom out in your browser if the content of this site is not shown properly.</p>
+                <p>Contact: jhonathan.castaneda@uao.edu.co</p>
+            </div>
+        </div>
+
+    </body>
+
+</html>
