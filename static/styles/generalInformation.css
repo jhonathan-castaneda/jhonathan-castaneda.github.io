@@ -102,7 +102,7 @@
                 
         .experience{min-height: 220px; display: grid; /*border: 1px solid rgb(255, 0, 217);/**/}
              
-            .jobs{container-type: inline-size;  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin: 10px; min-height: 300px; gap: 10px; /*border: 1px solid rgb(0, 208, 255);/**/}
+            .jobs{container-type: inline-size;display: grid; grid-template-columns: repeat(3, minmax(300px, 1fr)); margin: 10px; min-height: 300px; gap: 10px; /*border: 1px solid rgb(0, 208, 255);/**/}
                 
                 .item{display: grid; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; border: 1px solid rgb(0, 0, 0);/**/}
                                   
